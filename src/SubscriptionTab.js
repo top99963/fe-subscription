@@ -64,18 +64,20 @@ class SubscriptionTab extends React.Component {
     }
 
     handleSubmit(e) {
-        console.log(this.state)
-        this.setState(prevState => ({
-            ...initState,
-            type: prevState.type
-        }))
-        // axios.post(baseUrl, this.state)
-        //     .then(res => {
-        //         if (res.data) {
-        //             console.log('success')
-        //         }
-        //         console.log(res.data);
-        //     })
+        axios.post(baseUrl, this.state)
+            .then(res => {
+                if (res.data) {
+                    console.log('success')
+                    this.setState(prevState => ({
+                        ...initState,
+                        type: prevState.type
+                    }))
+                }
+                console.log(res.data);
+            })
+            .catch(err => {
+                console.log(err)
+            })
     }
 
     renderHeader() {
