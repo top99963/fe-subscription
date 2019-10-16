@@ -33,7 +33,7 @@ class Login extends React.Component {
             })
             .catch(err => {
                 console.log(err)
-                this.setState({errorMsg: 'Username or password incorrect !'})
+                this.setState({ errorMsg: 'Username or password incorrect !' })
             })
     }
 
@@ -45,26 +45,24 @@ class Login extends React.Component {
                 <div className="page-login">
                     <div className="container">
                         <div className="paper">
-                            <div className="paper2">
-                                <div className="headshadow" />
-                                <h2>
-                                    <img alt='' src="assets/img/logox2.png" />
-                                </h2>
-                                <p>
-                                    Please enter your username and password to access <br />the<strong> Renewables Accel</strong>
-                                </p>
-                                <div className="form form-login">
-                                    <div className="form-group warning">
-                                        <input name='username' value={this.state.username} onChange={this.handleChange} placeholder="Username" />
-                                    </div>
-                                    <div className="form-group">
-                                        <input type='password' name='password' value={this.state.password} onChange={this.handleChange} placeholder="Password" />
-                                    </div>
-                                    <div className="btn">
-                                        <a href onClick={this.handleSubmit} style={{ cursor: "pointer" }} >Submit</a>
-                                    </div>
-                                    <p style={{color: 'red'}}>{this.state.errorMsg}</p>
+                            <div className="headshadow" />
+                            <h2>
+                                <img alt='' src="assets/img/logox2.png" />
+                            </h2>
+                            <p>
+                                Please enter your username and password to access <br />the<strong> Renewables Accel</strong>
+                            </p>
+                            <div className="form form-login">
+                                <div className="form-group warning">
+                                    <input name='username' value={this.state.username} onChange={this.handleChange} placeholder="Username" />
                                 </div>
+                                <div className="form-group">
+                                    <input type='password' name='password' value={this.state.password} onChange={this.handleChange} placeholder="Password" />
+                                </div>
+                                <div className="btn">
+                                    <a href onClick={this.handleSubmit} style={{ cursor: "pointer" }} >Submit</a>
+                                </div>
+                                <p style={{ color: 'red' }}>{this.state.errorMsg}</p>
                             </div>
                         </div>
                     </div>

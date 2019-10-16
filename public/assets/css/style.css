@@ -34,8 +34,6 @@ body {
   color: #252525;
   font-size: 1rem;
   line-height: 1; }
-  body.show-menu {
-    overflow: hidden; }
 
 a {
   text-decoration: none;
@@ -59,6 +57,9 @@ header {
   @media (max-width: 768px) {
     header {
       padding: 40px 50px; } }
+  @media (max-width: 640px) {
+    header {
+      padding: 30px 20px; } }
   @media (max-width: 992px) {
     header .container {
       max-width: 100%; } }
@@ -83,6 +84,38 @@ header {
     @media (max-width: 992px) {
       header a.logo-main::after {
         bottom: -36px; } }
+  @media (max-width: 768px) {
+    header .nav-cover {
+      position: fixed;
+      width: 100%;
+      max-height: 100%;
+      top: 125px;
+      left: 0;
+      background-color: #fff;
+      z-index: 10;
+      opacity: 0;
+      visibility: hidden;
+      padding: 0;
+      overflow: scroll; } }
+  header .nav-cover.show {
+    opacity: 1;
+    visibility: visible; }
+  @media (max-width: 768px) {
+    header .nav-cover .nav-top {
+      position: relative;
+      min-height: 1000px; } }
+  header .nav-cover .nav-bottom {
+    position: absolute;
+    width: 100%;
+    bottom: 107px;
+    left: 0; }
+    header .nav-cover .nav-bottom ul li {
+      display: inline-block;
+      float: left;
+      width: 50%;
+      border: 1px solid #e7e7e7;
+      text-align: center;
+      padding-left: 0; }
   header ul {
     margin: 0;
     padding: 0; }
@@ -138,6 +171,9 @@ header {
   @media (max-width: 768px) {
     .headshadow {
       top: 115px; } }
+  @media (max-width: 640px) {
+    .headshadow {
+      top: 95px; } }
 
 .hero-slide {
   position: relative;
@@ -176,6 +212,9 @@ header {
     @media (max-width: 768px) {
       .hero-slide .slide {
         height: 900px; } }
+    @media (max-width: 768px) {
+      .hero-slide .slide {
+        height: 795px; } }
     .hero-slide .slide img {
       width: 100%; }
     .hero-slide .slide .item-slide .slide-detail {
@@ -324,6 +363,9 @@ header {
         right: auto;
         width: 100%;
         font-size: 3.9rem; } }
+    @media (max-width: 640px) {
+      .hero-slide .form-tab-list {
+        font-size: 3.3rem; } }
     @media (max-width: 768px) {
       .hero-slide .form-tab-list .form-tab {
         height: 1250px; } }
@@ -350,6 +392,9 @@ header {
           top: 95px;
           background-color: #f1f1f1;
           padding: 60px 50px; } }
+      @media (max-width: 640px) {
+        .hero-slide .form-tab-list .form-tab-seller, .hero-slide .form-tab-list .form-tab-buyer {
+          padding: 40px 35px; } }
       .hero-slide .form-tab-list .form-tab-seller.active, .hero-slide .form-tab-list .form-tab-buyer.active {
         opacity: 1;
         z-index: 1; }
@@ -362,9 +407,16 @@ header {
           .hero-slide .form-tab-list .form-tab-seller h4, .hero-slide .form-tab-list .form-tab-buyer h4 {
             font-size: 6rem;
             margin-bottom: 25px; } }
+        @media (max-width: 640px) {
+          .hero-slide .form-tab-list .form-tab-seller h4, .hero-slide .form-tab-list .form-tab-buyer h4 {
+            font-size: 5rem;
+            margin-bottom: 20px; } }
       @media (max-width: 768px) {
         .hero-slide .form-tab-list .form-tab-seller p, .hero-slide .form-tab-list .form-tab-buyer p {
           margin-bottom: 50px; } }
+      @media (max-width: 640px) {
+        .hero-slide .form-tab-list .form-tab-seller p, .hero-slide .form-tab-list .form-tab-buyer p {
+          margin-bottom: 40px; } }
       .hero-slide .form-tab-list .form-tab-seller .form-group.warning input, .hero-slide .form-tab-list .form-tab-buyer .form-group.warning input {
         border-bottom-color: #f33512; }
         .hero-slide .form-tab-list .form-tab-seller .form-group.warning input::-webkit-input-placeholder, .hero-slide .form-tab-list .form-tab-buyer .form-group.warning input::-webkit-input-placeholder {
@@ -405,6 +457,10 @@ header {
             border-bottom: solid 3px #1b1464;
             font-size: 4.9rem;
             margin-bottom: 45px; } }
+        @media (max-width: 640px) {
+          .hero-slide .form-tab-list .form-tab-seller input, .hero-slide .form-tab-list .form-tab-buyer input {
+            font-size: 3.7rem;
+            margin-bottom: 40px; } }
       .hero-slide .form-tab-list .form-tab-seller select, .hero-slide .form-tab-list .form-tab-buyer select {
         position: relative;
         width: 100%;
@@ -424,6 +480,17 @@ header {
         background-repeat: no-repeat;
         background-position: 95% 50%;
         background-size: 10px auto; }
+        @media (max-width: 768px) {
+          .hero-slide .form-tab-list .form-tab-seller select, .hero-slide .form-tab-list .form-tab-buyer select {
+            border-bottom: solid 3px #1b1464;
+            font-size: 4.9rem;
+            margin-bottom: 45px;
+            background-size: 20px auto; } }
+        @media (max-width: 640px) {
+          .hero-slide .form-tab-list .form-tab-seller select, .hero-slide .form-tab-list .form-tab-buyer select {
+            background-size: 15px auto;
+            font-size: 3.7rem;
+            margin-bottom: 40px; } }
         .hero-slide .form-tab-list .form-tab-seller select option, .hero-slide .form-tab-list .form-tab-buyer select option {
           color: #464646; }
         .hero-slide .form-tab-list .form-tab-seller select:not(:checked), .hero-slide .form-tab-list .form-tab-buyer select:not(:checked) {
@@ -452,6 +519,9 @@ header {
               font-size: 4.5rem;
               padding: 3px 60px;
               border-radius: 100px; } }
+          @media (max-width: 640px) {
+            .hero-slide .form-tab-list .form-tab-seller .btn a, .hero-slide .form-tab-list .form-tab-buyer .btn a {
+              font-size: 3.7rem; } }
     .hero-slide .form-tab-list ul {
       list-style-type: none;
       margin: 0;
@@ -481,6 +551,9 @@ header {
             .hero-slide .form-tab-list ul li a {
               font-size: 5rem;
               padding: 25px 0; } }
+          @media (max-width: 640px) {
+            .hero-slide .form-tab-list ul li a {
+              font-size: 4.2rem; } }
         .hero-slide .form-tab-list ul li.active {
           background: rgba(255, 255, 255, 0.9); }
           @media (max-width: 768px) {
@@ -548,6 +621,9 @@ header {
       .re-network .paper {
         margin-top: -140px;
         padding: 60px 50px 0; } }
+    @media (max-width: 640px) {
+      .re-network .paper {
+        padding: 50px 50px 20px; } }
     .re-network .paper h2 {
       font-family: 'DBHelvethaicaX-Med';
       font-size: 5.2rem;
@@ -562,11 +638,17 @@ header {
           font-size: 6.1rem;
           line-height: .8;
           margin-bottom: 20px; } }
+      @media (max-width: 640px) {
+        .re-network .paper h2 {
+          font-size: 5rem; } }
     @media (max-width: 768px) {
       .re-network .paper p {
         font-size: 3.9rem; }
         .re-network .paper p br {
           display: none; } }
+    @media (max-width: 640px) {
+      .re-network .paper p {
+        font-size: 3.3rem; } }
     .re-network .paper .re-list {
       position: relative;
       clear: both;
@@ -584,6 +666,9 @@ header {
         .re-network .paper .re-list {
           padding-top: 70px;
           padding-bottom: 30px; } }
+      @media (max-width: 640px) {
+        .re-network .paper .re-list {
+          padding-bottom: 0; } }
       .re-network .paper .re-list .re-image {
         position: relative;
         max-height: 245px;
@@ -627,6 +712,10 @@ header {
           .re-network .paper .re-list .re-detail {
             padding: 0 50px;
             margin-bottom: 80px; } }
+        @media (max-width: 640px) {
+          .re-network .paper .re-list .re-detail {
+            padding: 0 30px;
+            margin-bottom: 80px; } }
         .re-network .paper .re-list .re-detail h4 {
           font-family: 'DBHelvethaicaX-Reg';
           font-weight: 600;
@@ -642,6 +731,11 @@ header {
               font-size: 4.5rem;
               padding-top: 50px;
               padding-bottom: 20px; } }
+          @media (max-width: 640px) {
+            .re-network .paper .re-list .re-detail h4 {
+              font-size: 3.7rem;
+              padding-bottom: 15px;
+              padding-top: 40px; } }
     .re-network .paper::before {
       content: '';
       background-color: #fff;
@@ -684,6 +778,7 @@ header {
           right: 18px; } }
 
 .top-why {
+  text-align: center;
   margin-bottom: 45px; }
   @media (max-width: 992px) {
     .top-why {
@@ -691,6 +786,9 @@ header {
   @media (max-width: 768px) {
     .top-why {
       margin-bottom: 80px; } }
+  @media (max-width: 640px) {
+    .top-why {
+      margin-bottom: 60px; } }
 
 .why-join {
   font-size: 2rem;
@@ -709,6 +807,9 @@ header {
       font-size: 3.9rem; }
       .why-join p {
         margin-bottom: 35px; } }
+  @media (max-width: 640px) {
+    .why-join {
+      font-size: 3.3rem; } }
   @media (max-width: 768px) {
     .why-join .container {
       max-width: 85%; } }
@@ -730,6 +831,9 @@ header {
       .comment > img {
         width: 50px;
         padding: 0; } }
+    @media (max-width: 640px) {
+      .comment > img {
+        width: 40px; } }
   .comment .comment-detail {
     display: inline-block;
     width: 75%;
@@ -748,18 +852,29 @@ header {
         width: 90%;
         padding-left: 20px;
         font-size: 3.9rem; } }
+    @media (max-width: 640px) {
+      .comment .comment-detail {
+        width: 90%;
+        padding-left: 20px;
+        font-size: 3.3rem; } }
   .comment .commentator {
     margin-top: 25px; }
     @media (max-width: 768px) {
       .comment .commentator {
         margin-top: 50px;
         margin-bottom: 70px; } }
+    @media (max-width: 640px) {
+      .comment .commentator {
+        margin-bottom: 50px; } }
     .comment .commentator img {
       margin-right: 10px;
       margin-top: -15px; }
       @media (max-width: 1024px) {
         .comment .commentator img {
           vertical-align: inherit; } }
+      @media (max-width: 640px) {
+        .comment .commentator img {
+          vertical-align: bottom; } }
     .comment .commentator div {
       display: inline-block;
       width: 70%;
@@ -768,6 +883,9 @@ header {
       @media (max-width: 768px) {
         .comment .commentator div {
           font-size: 3.4rem; } }
+      @media (max-width: 640px) {
+        .comment .commentator div {
+          font-size: 2.8rem; } }
       .comment .commentator div span {
         display: block;
         font-family: 'DBHelvethaicaX-Reg';
@@ -824,6 +942,9 @@ header {
   @media (max-width: 768px) {
     .offer .col-md-5 {
       height: 600px; } }
+  @media (max-width: 640px) {
+    .offer .col-md-5 {
+      height: 550px; } }
   .offer .offer-detail {
     padding-left: 80px;
     padding-top: 120px;
@@ -862,7 +983,11 @@ header {
         .offer .offer-detail h2 {
           font-size: 9.2rem;
           text-align: center;
-          margin-bottom: 60px; } }
+          margin-bottom: 50px; } }
+      @media (max-width: 640px) {
+        .offer .offer-detail h2 {
+          font-size: 7.7rem;
+          margin-bottom: 30px; } }
     .offer .offer-detail p {
       font-family: 'DBHelvethaicaX-Reg';
       font-size: 2.4rem;
@@ -882,6 +1007,9 @@ header {
             width: 155px; }
           .offer .offer-detail p br {
             display: none; } }
+      @media (max-width: 640px) {
+        .offer .offer-detail p {
+          font-size: 3.3rem; } }
     .offer .offer-detail ul {
       list-style-type: none;
       padding: 0;
@@ -902,11 +1030,17 @@ header {
         @media (max-width: 768px) {
           .offer .offer-detail ul li {
             padding: 70px 0; } }
+        @media (max-width: 768px) {
+          .offer .offer-detail ul li {
+            padding: 50px 0; } }
         .offer .offer-detail ul li p {
           font-size: 2rem; }
           @media (max-width: 768px) {
             .offer .offer-detail ul li p {
               font-size: 3.8rem; } }
+          @media (max-width: 640px) {
+            .offer .offer-detail ul li p {
+              font-size: 3.3rem; } }
         @media (max-width: 768px) {
           .offer .offer-detail ul li:first-child {
             padding-top: 30px; } }
@@ -941,6 +1075,9 @@ header {
               .offer .offer-detail ul li .img-offer h3 {
                 font-family: 'DB Helvethaica X 63 MedExt';
                 font-size: 4.5rem; } }
+            @media (max-width: 640px) {
+              .offer .offer-detail ul li .img-offer h3 {
+                font-size: 3.7rem; } }
         .offer .offer-detail ul li .list-offer {
           width: 70%;
           font-size: 2rem; }
@@ -973,6 +1110,9 @@ header {
   @media (max-width: 768px) {
     .news {
       padding: 80px 0 140px; } }
+  @media (max-width: 640px) {
+    .news {
+      padding: 60px 0 100px; } }
   @media (max-width: 992px) {
     .news .container {
       max-width: 95%; } }
@@ -996,6 +1136,11 @@ header {
         font-size: 9.2rem; }
         .news h2 img {
           width: 30px; } }
+    @media (max-width: 640px) {
+      .news h2 {
+        font-size: 7.7rem; }
+        .news h2 img {
+          width: 25px; } }
   .news .news-list {
     margin-bottom: 75px; }
     @media (max-width: 1280px) {
@@ -1014,6 +1159,9 @@ header {
         @media (max-width: 768px) {
           .news .news-list ul li {
             width: 650px !important; } }
+        @media (max-width: 768px) {
+          .news .news-list ul li {
+            width: 500px !important; } }
         .news .news-list ul li > div {
           margin: 0 7.5%;
           position: relative;
@@ -1059,6 +1207,9 @@ header {
           @media (max-width: 768px) {
             .news .news-list ul li .news-img {
               max-height: 430px; } }
+          @media (max-width: 640px) {
+            .news .news-list ul li .news-img {
+              max-height: 350px; } }
         .news .news-list ul li .news-desc {
           font-family: 'DBHelvethaicaX-Reg';
           padding: 20px 15px 30px;
@@ -1076,6 +1227,10 @@ header {
             .news .news-list ul li .news-desc {
               font-size: 3.9rem;
               padding: 50px 40px; } }
+          @media (max-width: 640px) {
+            .news .news-list ul li .news-desc {
+              padding: 40px 30px;
+              font-size: 3.3rem; } }
           .news .news-list ul li .news-desc h3 {
             font-family: 'DBHelvethaicaX-Reg';
             font-weight: 600;
@@ -1093,11 +1248,17 @@ header {
               .news .news-list ul li .news-desc h3 {
                 font-size: 4.5rem;
                 margin-bottom: 28px; } }
+            @media (max-width: 640px) {
+              .news .news-list ul li .news-desc h3 {
+                font-size: 3.7rem; } }
           .news .news-list ul li .news-desc p {
             margin-bottom: 15px; }
             @media (max-width: 768px) {
               .news .news-list ul li .news-desc p {
                 margin-bottom: 28px; } }
+            @media (max-width: 640px) {
+              .news .news-list ul li .news-desc p {
+                margin-bottom: 20px; } }
           .news .news-list ul li .news-desc .meta {
             display: block;
             color: #1b1464; }
@@ -1496,9 +1657,15 @@ footer {
   background-image: url("../img/bg-login.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
-  background-position: top center; }
+  background-position: top center;
+  position: absolute;
+  width: 100%;
+  min-width: 1440px;
+  top: 0;
+  left: 0; }
   .page-login .container {
-    width: 1440px; }
+    width: 1440px;
+    max-width: none; }
   .page-login .headshadow {
     position: fixed;
     width: 70%;
@@ -1517,17 +1684,19 @@ footer {
       .page-login .headshadow {
         width: 110%;
         top: 50px; } }
+  .page-login .paper2 {
+    padding-top: 45px;
+    background-color: #fff;
+    min-height: 700px; }
   .page-login .paper {
     position: relative;
     margin-top: 140px;
-    padding-top: 45px;
     background-color: #fff;
     font-family: 'DBHelvethaicaX-Reg';
     font-size: 2.6rem;
     line-height: 1;
     text-align: center;
-    color: #707070;
-    min-height: 700px; }
+    color: #707070; }
     @media (max-width: 1024px) {
       .page-login .paper {
         margin-top: -60px; } }
