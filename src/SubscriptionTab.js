@@ -64,7 +64,7 @@ class SubscriptionTab extends React.Component {
     }
 
     handleSubmit(e) {
-        axios.post(baseUrl, this.state)
+        axios.post(baseUrl + '/subscription', this.state)
             .then(res => {
                 if (res.data) {
                     console.log('success')
