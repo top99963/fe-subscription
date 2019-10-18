@@ -50,7 +50,7 @@ class ContactUs extends React.Component {
                         <div className="row">
                             <div className="col-7 col-md-2">
                                 <a href="/" className="logo-main">
-                                    <img src="assets/img/logo.png" />
+                                    <img alt=""src="assets/img/logo.png" />
                                 </a>
                             </div>
                             <div className="col-md-7 nav-cover">
@@ -61,17 +61,17 @@ class ContactUs extends React.Component {
                                         </a>
                                     </li>
                                     <li>
-                                        <a href>
+                                        <a href="#">
                                             Product &amp; Service
                                     </a>
                                     </li>
                                     <li>
-                                        <a href>
+                                        <a href="#">
                                             News
                                     </a>
                                     </li>
                                     <li>
-                                        <a href>
+                                        <a href="#">
                                             Partners
                                     </a>
                                     </li>
@@ -178,17 +178,17 @@ class ContactUs extends React.Component {
                 </a>
                                         </li>
                                         <li>
-                                            <a href>
+                                            <a href="#">
                                                 Product &amp; Service
                 </a>
                                         </li>
                                         <li>
-                                            <a href>
+                                            <a href="#">
                                                 News
                 </a>
                                         </li>
                                         <li>
-                                            <a href>
+                                            <a href="#">
                                                 Partners
                 </a>
                                         </li>
@@ -203,18 +203,18 @@ class ContactUs extends React.Component {
                                     <span>Follow us:</span>
                                     <ul>
                                         <li>
-                                            <a href >
-                                                <img src="assets/img/Icon_Social_01.png" />
+                                            <a href="#" >
+                                                <img alt=""src="assets/img/Icon_Social_01.png" />
                                             </a>
                                         </li>
                                         <li>
-                                            <a href target="_blank">
-                                                <img src="assets/img/Icon_Social_02.png" />
+                                            <a href="#" target="_blank">
+                                                <img alt=""src="assets/img/Icon_Social_02.png" />
                                             </a>
                                         </li>
                                         <li>
-                                            <a href target="_blank">
-                                                <img src="assets/img/Icon_Social_03.png" />
+                                            <a href="#" target="_blank">
+                                                <img alt=""src="assets/img/Icon_Social_03.png" />
                                             </a>
                                         </li>
                                     </ul>
@@ -228,17 +228,17 @@ class ContactUs extends React.Component {
                             <ul>
                                 <li>
                                     <a href target="_blank">
-                                        <img src="assets/img/Icon_Social_01.png" />
+                                        <img alt=""src="assets/img/Icon_Social_01.png" />
                                     </a>
                                 </li>
                                 <li>
                                     <a href target="_blank">
-                                        <img src="assets/img/Icon_Social_02.png" />
+                                        <img alt=""src="assets/img/Icon_Social_02.png" />
                                     </a>
                                 </li>
                                 <li>
                                     <a href target="_blank">
-                                        <img src="assets/img/Icon_Social_03.png" />
+                                        <img alt=""src="assets/img/Icon_Social_03.png" />
                                     </a>
                                 </li>
                             </ul>
@@ -251,17 +251,17 @@ class ContactUs extends React.Component {
                                     © 2019 Expresso rep. All Rights Reserved.
           </li>
                                 <li>
-                                    <a href>
+                                    <a href="#">
                                         Terms and conditions
             </a>
                                 </li>
                                 <li>
-                                    <a href>
+                                    <a href="#">
                                         Privacy Policy
             </a>
                                 </li>
                                 <li>
-                                    <a href>
+                                    <a href="#">
                                         Cookie Policy
             </a>
                                 </li>
@@ -270,8 +270,8 @@ class ContactUs extends React.Component {
                     </div>
                     <div className="btn-totop">
                         <a href>
-                            <img className="d-none d-none d-md-block" src="assets/img/ico-top.png" />
-                            <img className="d-md-none" src="assets/img/ico-top-m.png" />
+                            <img alt=""className="d-none d-none d-md-block" src="assets/img/ico-top.png" />
+                            <img alt=""className="d-md-none" src="assets/img/ico-top-m.png" />
                         </a>
                     </div>
                 </footer>

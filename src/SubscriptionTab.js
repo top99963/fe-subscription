@@ -82,7 +82,7 @@ class SubscriptionTab extends React.Component {
 
     renderHeader() {
         var headerText = this.state.type === 'buyer' ? 'Buying renewables' : 'Selling energy registration'
-        var bodyText = this.state.type === 'buyer' ? 'Learn how we can help you achieverenewable energy target, please leave your contact here' : 'Directly from projects, please fill in the form below if you would like our help connecting with power plans.'
+        var bodyText = this.state.type === 'buyer' ? 'Learn how we can help you achieverenewable energy target, sign up for more information and demo' : 'Directly from projects, please fill in the form below if you would like our help connecting with power plans.'
 
         return (
             <div>
@@ -170,10 +170,10 @@ class SubscriptionTab extends React.Component {
                 </div>
                 <ul>
                     <li className='active'>
-                        <a href='/#' onClick={this.handleTabBuyer}>Buyer</a>
+                        <a href='/#' onClick={this.handleTabBuyer}>Power consumer</a>
                     </li>
                     <li>
-                        <a href='/#' onClick={this.handleTabSeller}>Seller</a>
+                        <a href='/#' onClick={this.handleTabSeller}>Power generator</a>
                     </li>
                 </ul>
                 <div className="form-tab">

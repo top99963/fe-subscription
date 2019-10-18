@@ -3,10 +3,6 @@ import SubscriptionTab from './SubscriptionTab'
 
 class Main extends React.Component {
 
-  constructor() {
-    super()
-  }
-
   render() {
     return (
       <div>
@@ -18,29 +14,29 @@ class Main extends React.Component {
           <div className="container">
             <div className="row">
               <div className="col-7 col-md-2">
-                <a href='' className="logo-main">
-                  <img src="assets/img/logo.png" />
+                <a href='/' className="logo-main">
+                  <img alt="" src="assets/img/logo.png" />
                 </a>
               </div>
               <div className="col-md-7 nav-cover">
                 <ul className="nav-top">
                   <li>
-                    <a href>
+                    <a href="/#">
                       About us
               </a>
                   </li>
                   <li>
-                    <a href>
+                    <a href="/#">
                       Product &amp; Service
               </a>
                   </li>
                   <li>
-                    <a href>
+                    <a href="/#">
                       News
               </a>
                   </li>
                   <li>
-                    <a href>
+                    <a href="/#">
                       Partners
               </a>
                   </li>
@@ -52,12 +48,12 @@ class Main extends React.Component {
                   <div className="nav-bottom">
                     <ul>
                       <li>
-                        <a href>
+                        <a href="/#">
                           English
                   </a>
                       </li>
                       <li>
-                        <a href>
+                        <a href="/#">
                           ไทย
                   </a>
                       </li>
@@ -78,33 +74,33 @@ class Main extends React.Component {
         <div className="hero-slide">
           <div className="slide">
             <div className="item-slide">
-              <img className="d-none d-none d-md-block" src="dump/stock-photo-sun-rays-over-a-photovoltaic-power-plant-188611307.jpg" />
-              <img className="d-md-none" src="dump/stock-mobile.jpg" />
+              <img alt="" className="d-none d-none d-md-block" src="dump/stock-photo-sun-rays-over-a-photovoltaic-power-plant-188611307.jpg" />
+              <img alt="" className="d-md-none" src="dump/stock-mobile.jpg" />
               <div className="slide-detail container">
                 <h1>
-                  <img src="assets/img/expressorep-title.png" />
+                  <img alt="" src="assets/img/expressorep-title.png" />
                 </h1>
                 <p>
                   We help corporate buyers achieve their renewables goal at ease and meaningful, <br />
                   and create additional revenue for renewables owners
           </p>
-                <a href>
+                <a href="/#">
                   Learn more
           </a>
               </div>
             </div>
             <div className="item-slide">
-              <img className="d-none d-none d-md-block" src="dump/banner-2.jpg" />
-              <img className="d-md-none" src="dump/stock-mobile.jpg" />
+              <img alt="" className="d-none d-none d-md-block" src="dump/banner-2.jpg" />
+              <img alt="" className="d-md-none" src="dump/stock-mobile.jpg" />
               <div className="slide-detail container">
                 <h1>
-                  <img src="assets/img/expressorep-title.png" />
+                  <img alt="" src="assets/img/expressorep-title.png" />
                 </h1>
                 <p>
                   We help corporate buyers achieve their renewables goal at ease and meaningful, <br />
                   and create additional revenue for renewables owners
           </p>
-                <a href>
+                <a href="/#">
                   Learn more
           </a>
               </div>
@@ -112,7 +108,7 @@ class Main extends React.Component {
           </div>
           <SubscriptionTab />
           <div className="down-to-content">
-            <img src="assets/img/icon-down.png" />
+            <img alt="" src="assets/img/icon-down.png" />
           </div>
         </div>
         <div className="re-network">
@@ -131,58 +127,55 @@ class Main extends React.Component {
                     <div className="row">
                       <div className="col-12 col-md-4">
                         <div className="re-image">
-                          <img src="dump/stock-photo-photovoltaic-modules-reflect-sunset-light-and-clouds-288145694.jpg" />
+                          <img alt="" src="dump/stock-photo-photovoltaic-modules-reflect-sunset-light-and-clouds-288145694.jpg" />
                         </div>
                         <div className="re-detail">
                           <h4>
                             Energy Attribute Certificates (EACs)
                     </h4>
                           <p>
-                            We help corporates purchase Renewable Energy
-                            Certificates (RECs) in the geography and type of
-                            renewables they want through simple steps
+                            Power consumers can source a variety of
+                            Renewable Energy Certificates (RECs) in the geography and type of renewables they want under the internationally accepted certification standard e.g. I-REC
                     </p>
                         </div>
                         <div className="btn">
-                          <a href>
+                          <a href="/#">
                             Learn more
                     </a>
                         </div>
                       </div>
                       <div className="col-12 col-md-4">
                         <div className="re-image">
-                          <img src="dump/stock-photo--d-rendering-of-windturbines-on-the-ocean-31110454.jpg" />
+                          <img alt="" src="dump/stock-photo--d-rendering-of-windturbines-on-the-ocean-31110454.jpg" />
                         </div>
                         <div className="re-detail">
                           <h4>
                             Digital Power Purchase Agreement (PPA)
                     </h4>
                           <p>
-                            We help corporates engage in longer-term PPA
-                            of renewable energy projects
+                            Power consumers can engage in PPA with terms they want through simplified process and automatically receive corresponding RECs for easy and accurate tracking.
                     </p>
                         </div>
                         <div className="btn">
-                          <a href>
+                          <a href="/#">
                             Learn more
                     </a>
                         </div>
                       </div>
                       <div className="col-12 col-md-4">
                         <div className="re-image">
-                          <img src="dump/stock-photo-ev-car-or-electric-car-at-charging-station-with-the-power-cable-supply-plugged-in-on-blurred-1320569111.jpg" />
+                          <img alt="" src="dump/stock-photo-ev-car-or-electric-car-at-charging-station-with-the-power-cable-supply-plugged-in-on-blurred-1320569111.jpg" />
                         </div>
                         <div className="re-detail">
                           <h4>
                             Green EV charging
                     </h4>
                           <p>
-                            We help corporates track their electric vehicle
-                            fleets on renewables consumption
+                            Power consumers can further decrease emissions from their EV fleet by using 100% renewable energy for charging.
                     </p>
                         </div>
                         <div className="btn">
-                          <a href>
+                          <a href="/#">
                             Learn more
                     </a>
                         </div>
@@ -197,69 +190,74 @@ class Main extends React.Component {
         <div className="why-join">
           <div className="top-why container">
             <h2>
-              Why join <span>Renewables</span> Accel
+              Why join <span>Re</span>Accel
       </h2>
-            <img className="d-none d-none d-md-inline" src="assets/img/join-text.png" />
-            <img className="d-md-none" src="assets/img/join-text-m.jpg" />
+            <img alt="" className="d-none d-none d-md-inline" src="assets/img/join-text.png" />
+            <img alt="" className="d-md-none" src="assets/img/join-text-m.jpg" />
           </div>
         </div>
         <div className="offer">
           <div className="container">
             <div className="row">
               <div className="col-12 col-md-6">
-                <img src="assets/img/offer-notebook.png" />
+                <img alt="" src="assets/img/offer-notebook.png" />
               </div>
               <div className="col-12 col-md-6">
                 <div className="offer-detail">
                   <ul>
                     <li>
                       <div className="img-offer">
-                        <img src="assets/img/offer-1-n.png" />
+                        <img alt="" src="assets/img/offer-2-n.png" />
                       </div>
                       <div className="list-offer">
+                        <p>One-stop shop</p>
                         <p>
-                          Sync with widely accepted standard i.e. International REC (I-REC)
+                        End-to-end simple process from registration, sourcing, tracking and reporting your progress on renewable energy to relevant stakeholders
                   </p>
                       </div>
                     </li>
                     <li>
                       <div className="img-offer">
-                        <img src="assets/img/offer-2-n.png" />
+                        <img alt="" src="assets/img/offer-1-n.png" />
                       </div>
                       <div className="list-offer">
+                        <p>Compliance with standard</p>
                         <p>
-                          End-to-end easy process from registration, buying, tracking and reporting
+                        Fully compliance with the internationally accepted certification standard e.g. I-REC
                   </p>
                       </div>
                     </li>
                     <li>
                       <div className="img-offer">
-                        <img src="assets/img/offer-3-n.png" />
+                        <img alt="" src="assets/img/offer-3-n.png" />
                       </div>
                       <div className="list-offer">
+                        <p>More solutions to mix/match</p>
                         <p>
-                          More products with their impact details to mix/match to achieve renewables goal
+                        More renewable energy solutions with impact details for you to mix/match for an optimal achievement of your renewable energy target
                   </p>
                       </div>
                     </li>
                     <li>
                       <div className="img-offer">
-                        <img src="assets/img/offer-4-n.png" />
+                        <img alt="" src="assets/img/offer-4-n.png" />
                       </div>
                       <div className="list-offer">
+                        <p>Powerful tracking tools</p>
                         <p>
-                          Outperform current tracking tools
+                        Fully automated state-of-the-art blockchain solutions for saving your time and resources
                   </p>
                       </div>
                     </li>
                     <li>
                       <div className="img-offer">
-                        <img src="assets/img/offer-5-n.png" />
+                        <img alt="" src="assets/img/offer-5-n.png" />
                       </div>
                       <div className="list-offer">
                         <p>
                           No double counting
                   </p>
+                  <p>Working closely with local and international registries and standards, our technology helps avoid double counting of renewable energy assets.</p>
                       </div>
                     </li>
                   </ul>
@@ -271,7 +269,7 @@ class Main extends React.Component {
         <div className="news">
           <div className="container">
             <h2>
-              News <span><img src="assets/img/ico-slash.png" /></span> Events
+              News <span><img alt="" src="assets/img/ico-slash.png" /></span> Events
       </h2>
             <div className="news-list">
               <div className="row row justify-content-center">
@@ -281,7 +279,7 @@ class Main extends React.Component {
                       <div>
                         <a target="_blank" href="https://finance.yahoo.com/news/thailand-national-utility-launches-ethereum-145600093.html">
                           <div className="news-img">
-                            <img src="dump/news-im.jpg" />
+                            <img alt="" src="dump/news-im.jpg" />
                           </div>
                           <div className="news-desc">
                             <h3>
@@ -304,14 +302,14 @@ class Main extends React.Component {
                               15 September 2019
                       </span>
                           </div>
-                        </a></div><a target="_blank" href="https://finance.yahoo.com/news/thailand-national-utility-launches-ethereum-145600093.html">
+                        </a></div><a href="https://finance.yahoo.com/news/thailand-national-utility-launches-ethereum-145600093.html">
                       </a>
                     </li>
                     <li className>
                       <div>
-                        <a target="_blank" href="https://www.energyweb.org/2019/09/11/ptt-and-energy-web-foundation-launch-blockchain-based-renewables-platform-for-thailand-asean-japan/">
+                        <a href="https://www.energyweb.org/2019/09/11/ptt-and-energy-web-foundation-launch-blockchain-based-renewables-platform-for-thailand-asean-japan/">
                           <div className="news-img">
-                            <img src="dump/news-im-2.jpg" />
+                            <img alt="" src="dump/news-im-2.jpg" />
                           </div>
                           <div className="news-desc">
                             <h3>
@@ -344,7 +342,7 @@ class Main extends React.Component {
                       <div>
                         <a target="_blank" href="https://www.ledgerinsights.com/ptt-blockchain-renewable-energy-marketplace-rec-ewf/">
                           <div className="news-img">
-                            <img src="dump/stock-photo-photovoltaic-panels-for-renewable-electric-production-navarra-aragon-spain-500035789.jpg" />
+                            <img alt="" src="dump/stock-photo-photovoltaic-panels-for-renewable-electric-production-navarra-aragon-spain-500035789.jpg" />
                           </div>
                           <div className="news-desc">
                             <h3>
@@ -376,7 +374,7 @@ class Main extends React.Component {
               </div>
             </div>
             <div className="btn">
-              <a href>
+              <a href="/#">
                 More news
         </a>
             </div>
@@ -389,15 +387,15 @@ class Main extends React.Component {
       </h2>
             <ul className="mem-1">
               <li>
-                <img className="d-none d-none d-md-inline" src="assets/img/founder-member.png" />
-                <img className="d-md-none" src="assets/img/founder-member-m.png" />
+                <img alt="" className="d-none d-none d-md-inline" src="assets/img/founder-member.png" />
+                <img alt="" className="d-md-none" src="assets/img/founder-member-m.png" />
               </li>
             </ul>
             <div>
               <h4>
                 Do you want to become a <strong>Renewables Accel</strong> member?
         </h4>
-              <a className="btn" href='#'>
+              <a className="btn" href='/#'>
                 Subscribe Now
         </a>
             </div>
@@ -415,17 +413,17 @@ class Main extends React.Component {
                 </a>
                     </li>
                     <li>
-                      <a href>
+                      <a href="/#">
                         Product &amp; Service
                 </a>
                     </li>
                     <li>
-                      <a href>
+                      <a href="/#">
                         News
                 </a>
                     </li>
                     <li>
-                      <a href>
+                      <a href="/#">
                         Partners
                 </a>
                     </li>
@@ -440,18 +438,18 @@ class Main extends React.Component {
                   <span>Follow us:</span>
                   <ul>
                     <li>
-                      <a href target="_blank">
-                        <img src="assets/img/Icon_Social_01.png" />
+                      <a href="/#" target="_blank">
+                        <img alt="" src="assets/img/Icon_Social_01.png" />
                       </a>
                     </li>
                     <li>
-                      <a href target="_blank">
-                        <img src="assets/img/Icon_Social_02.png" />
+                      <a href="/#" target="_blank">
+                        <img alt="" src="assets/img/Icon_Social_02.png" />
                       </a>
                     </li>
                     <li>
-                      <a href target="_blank">
-                        <img src="assets/img/Icon_Social_03.png" />
+                      <a href="/#" target="_blank">
+                        <img alt="" src="assets/img/Icon_Social_03.png" />
                       </a>
                     </li>
                   </ul>
@@ -464,18 +462,18 @@ class Main extends React.Component {
               <span>Follow us:</span>
               <ul>
                 <li>
-                  <a href target="_blank">
-                    <img src="assets/img/Icon_Social_01.png" />
+                  <a href="/#" target="_blank">
+                    <img alt="" src="assets/img/Icon_Social_01.png" />
                   </a>
                 </li>
                 <li>
-                  <a href target="_blank">
-                    <img src="assets/img/Icon_Social_02.png" />
+                  <a href="/#" target="_blank">
+                    <img alt="" src="assets/img/Icon_Social_02.png" />
                   </a>
                 </li>
                 <li>
-                  <a href target="_blank">
-                    <img src="assets/img/Icon_Social_03.png" />
+                  <a href="/#" target="_blank">
+                    <img alt="" src="assets/img/Icon_Social_03.png" />
                   </a>
                 </li>
               </ul>
@@ -488,17 +486,17 @@ class Main extends React.Component {
                   © 2019 Expresso rep. All Rights Reserved.
           </li>
                 <li>
-                  <a href>
+                  <a href="/#">
                     Terms and conditions
             </a>
                 </li>
                 <li>
-                  <a href>
+                  <a href="/#">
                     Privacy Policy
             </a>
                 </li>
                 <li>
-                  <a href>
+                  <a href="/#">
                     Cookie Policy
             </a>
                 </li>
@@ -506,16 +504,16 @@ class Main extends React.Component {
             </div>
           </div>
           <div className="btn-totop">
-            <a href>
-              <img className="d-none d-none d-md-block" src="assets/img/ico-top.png" />
-              <img className="d-md-none" src="assets/img/ico-top-m.png" />
+            <a href="/#">
+              <img alt="" className="d-none d-none d-md-block" src="assets/img/ico-top.png" />
+              <img alt="" className="d-md-none" src="assets/img/ico-top-m.png" />
             </a>
           </div>
         </footer>
         {/* show */}
         <div id="register-success" className="modal fade">
-          <a href className="close-modal">
-            <img src="assets/img/ico-close.png" />
+          <a href="/#" className="close-modal">
+            <img alt="" src="assets/img/ico-close.png" />
           </a>
           <div className="modal-content">
             <h2>Thank you for registration</h2>
@@ -524,7 +522,7 @@ class Main extends React.Component {
               In the meantime, you can check the FAQ section, look over our new product collection or <br />
               browse through our product.
       </p>
-            <a className="btn" href>
+            <a className="btn" href="/#">
               Submit
       </a>
           </div>
