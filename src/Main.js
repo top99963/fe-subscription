@@ -190,7 +190,7 @@ class Main extends React.Component {
         <div className="why-join">
           <div className="top-why container">
             <h2>
-              Why join <span>Re</span>Accel
+              Why join <span>Re</span>Acc
       </h2>
             <img alt="" className="d-none d-none d-md-inline" src="assets/img/join-text.png" />
             <img alt="" className="d-md-none" src="assets/img/join-text-m.jpg" />
