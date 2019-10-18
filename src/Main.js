@@ -210,9 +210,9 @@ class Main extends React.Component {
                         <img alt="" src="assets/img/offer-2-n.png" />
                       </div>
                       <div className="list-offer">
-                        <p>One-stop shop</p>
+                        <p style={{ fontWeight: "bold" }}>One-stop shop</p>
                         <p>
-                        End-to-end simple process from registration, sourcing, tracking and reporting your progress on renewable energy to relevant stakeholders
+                          End-to-end simple process from registration, sourcing, tracking and reporting your progress on renewable energy to relevant stakeholders
                   </p>
                       </div>
                     </li>
@@ -221,9 +221,9 @@ class Main extends React.Component {
                         <img alt="" src="assets/img/offer-1-n.png" />
                       </div>
                       <div className="list-offer">
-                        <p>Compliance with standard</p>
+                        <p style={{ fontWeight: "bold" }}>Compliance with standard</p>
                         <p>
-                        Fully compliance with the internationally accepted certification standard e.g. I-REC
+                          Fully compliance with the internationally accepted certification standard e.g. I-REC
                   </p>
                       </div>
                     </li>
@@ -232,9 +232,9 @@ class Main extends React.Component {
                         <img alt="" src="assets/img/offer-3-n.png" />
                       </div>
                       <div className="list-offer">
-                        <p>More solutions to mix/match</p>
+                        <p style={{ fontWeight: "bold" }}>More solutions to mix/match</p>
                         <p>
-                        More renewable energy solutions with impact details for you to mix/match for an optimal achievement of your renewable energy target
+                          More renewable energy solutions with impact details for you to mix/match for an optimal achievement of your renewable energy target
                   </p>
                       </div>
                     </li>
@@ -243,9 +243,9 @@ class Main extends React.Component {
                         <img alt="" src="assets/img/offer-4-n.png" />
                       </div>
                       <div className="list-offer">
-                        <p>Powerful tracking tools</p>
+                        <p style={{ fontWeight: "bold" }}>Powerful tracking tools</p>
                         <p>
-                        Fully automated state-of-the-art blockchain solutions for saving your time and resources
+                          Fully automated state-of-the-art blockchain solutions for saving your time and resources
                   </p>
                       </div>
                     </li>
@@ -254,10 +254,10 @@ class Main extends React.Component {
                         <img alt="" src="assets/img/offer-5-n.png" />
                       </div>
                       <div className="list-offer">
-                        <p>
+                        <p style={{ fontWeight: "bold" }}>
                           No double counting
                   </p>
-                  <p>Working closely with local and international registries and standards, our technology helps avoid double counting of renewable energy assets.</p>
+                        <p>Working closely with local and international registries and standards, our technology helps avoid double counting of renewable energy assets.</p>
                       </div>
                     </li>
                   </ul>
