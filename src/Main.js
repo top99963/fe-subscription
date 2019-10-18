@@ -1,7 +1,13 @@
 import React from 'react';
 import SubscriptionTab from './SubscriptionTab'
 
+const initState = {}
+
 class Main extends React.Component {
+  constructor() {
+    super()
+    this.state = { ...initState }
+  }
 
   render() {
     return (
@@ -64,7 +70,7 @@ class Main extends React.Component {
               <div className="col-5 col-md-3">
                 <a href="login" className="btn-login">Client login</a>
                 {/*  */}
-                <a className="navbar-toggler">
+                <a href className="navbar-toggler">
                 </a>
               </div>
             </div>
@@ -106,7 +112,7 @@ class Main extends React.Component {
               </div>
             </div>
           </div>
-          <SubscriptionTab />
+          <SubscriptionTab handleOpenModal={this.handleOpenModal} />
           <div className="down-to-content">
             <img alt="" src="assets/img/icon-down.png" />
           </div>
@@ -510,29 +516,15 @@ class Main extends React.Component {
             </a>
           </div>
         </footer>
-        {/* show */}
-        <div id="register-success" className="modal fade">
-          <a href="/#" className="close-modal">
-            <img alt="" src="assets/img/ico-close.png" />
-          </a>
-          <div className="modal-content">
-            <h2>Thank you for registration</h2>
-            <p>
-              We appreciate you contacting Expresso Rep. We will look over your message and get back to you by tomorrow. <br />
-              In the meantime, you can check the FAQ section, look over our new product collection or <br />
-              browse through our product.
-      </p>
-            <a className="btn" href="/#">
-              Submit
-      </a>
-          </div>
-        </div>
-        {/* show */}
-        <div className="overlay " />
       </div>
 
     )
   }
 }
+
+
+
+
+
 
 export default Main;

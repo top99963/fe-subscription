@@ -7,7 +7,8 @@ const initState = {
     topic: '',
     name: '',
     email: '',
-    message: ''
+    message: '',
+    isModal: false
 }
 
 class ContactUs extends React.Component {
@@ -25,21 +26,20 @@ class ContactUs extends React.Component {
 
     handleSubmit() {
         event.preventDefault()
+
         axios.post(baseUrl + '/contact_us', this.state)
             .then(res => {
-                if (res.data) {
-                    alert('success')
-                }
+                // if (res.data) {
+                // }
             })
             .catch(err => {
                 console.log(err)
-                alert('error')
             })
             .then(() => {
-                this.setState({ ...initState })
+                this.setState({ ...initState, isModal: true })
             })
     }
-    
+
     render() {
         return (
             <div>
@@ -50,7 +50,7 @@ class ContactUs extends React.Component {
                         <div className="row">
                             <div className="col-7 col-md-2">
                                 <a href="/" className="logo-main">
-                                    <img alt=""src="assets/img/logo.png" />
+                                    <img alt="" src="assets/img/logo.png" />
                                 </a>
                             </div>
                             <div className="col-md-7 nav-cover">
@@ -154,7 +154,7 @@ class ContactUs extends React.Component {
                                                 <input name="topic" value={this.state.topic} onChange={this.handleChange} placeholder="Topic" />
                                             </div>
                                             <div className="form-group ">
-                                                <textarea  value={this.state.message} rows={4} cols={41} name="message" onChange={this.handleChange} placeholder="Message" />
+                                                <textarea value={this.state.message} rows={4} cols={41} name="message" onChange={this.handleChange} placeholder="Message" />
                                             </div>
                                             <div className="form-group ">
                                                 <button onClick={this.handleSubmit}>Submit</button>
@@ -204,17 +204,17 @@ class ContactUs extends React.Component {
                                     <ul>
                                         <li>
                                             <a href="#" >
-                                                <img alt=""src="assets/img/Icon_Social_01.png" />
+                                                <img alt="" src="assets/img/Icon_Social_01.png" />
                                             </a>
                                         </li>
                                         <li>
                                             <a href="#" target="_blank">
-                                                <img alt=""src="assets/img/Icon_Social_02.png" />
+                                                <img alt="" src="assets/img/Icon_Social_02.png" />
                                             </a>
                                         </li>
                                         <li>
                                             <a href="#" target="_blank">
-                                                <img alt=""src="assets/img/Icon_Social_03.png" />
+                                                <img alt="" src="assets/img/Icon_Social_03.png" />
                                             </a>
                                         </li>
                                     </ul>
@@ -228,17 +228,17 @@ class ContactUs extends React.Component {
                             <ul>
                                 <li>
                                     <a href target="_blank">
-                                        <img alt=""src="assets/img/Icon_Social_01.png" />
+                                        <img alt="" src="assets/img/Icon_Social_01.png" />
                                     </a>
                                 </li>
                                 <li>
                                     <a href target="_blank">
-                                        <img alt=""src="assets/img/Icon_Social_02.png" />
+                                        <img alt="" src="assets/img/Icon_Social_02.png" />
                                     </a>
                                 </li>
                                 <li>
                                     <a href target="_blank">
-                                        <img alt=""src="assets/img/Icon_Social_03.png" />
+                                        <img alt="" src="assets/img/Icon_Social_03.png" />
                                     </a>
                                 </li>
                             </ul>
@@ -270,11 +270,27 @@ class ContactUs extends React.Component {
                     </div>
                     <div className="btn-totop">
                         <a href>
-                            <img alt=""className="d-none d-none d-md-block" src="assets/img/ico-top.png" />
-                            <img alt=""className="d-md-none" src="assets/img/ico-top-m.png" />
+                            <img alt="" className="d-none d-none d-md-block" src="assets/img/ico-top.png" />
+                            <img alt="" className="d-md-none" src="assets/img/ico-top-m.png" />
                         </a>
                     </div>
                 </footer>
+                <div id="register-success" className={"modal fade " + (this.state.isModal && 'show')}>
+                    <a href="/#" className="close-modal">
+                        <img alt="" src="assets/img/ico-close.png" />
+                    </a>
+                    <div className="modal-content">
+                        <div class="modal-content">
+                            <h2>Thank you for your message</h2>
+                            <p>We will get back to you soonest. <br /><br />
+                            </p>
+                            <a className="btn" onClick={() => { this.setState({ isModal: false }) }} href="/#">
+                                OK
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div className={"overlay " + (this.state.isModal && 'show')} />
             </div>
 
         )

@@ -107,16 +107,6 @@ $(document).ready(function(){
     $('.form-tab-seller').toggleClass('active');
     $('.form-tab-buyer').toggleClass('active');
   });
-  $('.form-tab-seller a').click(function(e){
-    e.preventDefault();
-    $('#register-success').addClass('show');
-    $('.overlay').addClass('show');
-  });
-  $('.form-tab-buyer a').click(function(e){
-      e.preventDefault();
-      $('#register-success').addClass('show');
-      $('.overlay').addClass('show');
-  });
   $('.modal .close-modal,.modal .btn').click(function(e){
       e.preventDefault();
       $('#register-success').removeClass('show');
