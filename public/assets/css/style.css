@@ -722,7 +722,7 @@ header {
       max-width: 98%; } }
   .re-network .paper {
     position: relative;
-    margin-top: -40;
+    margin-top: -40px;
     padding-top: 45px;
     background-color: #fff;
     font-family: 'DBHelvethaicaX-Reg';
