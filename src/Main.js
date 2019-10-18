@@ -3,24 +3,27 @@ import SubscriptionTab from './SubscriptionTab'
 
 class Main extends React.Component {
 
+  constructor() {
+    super()
+  }
+
   render() {
     return (
       <div>
         <link rel="stylesheet" type="text/css" href="assets/bootstrap/css/bootstrap.css" />
         <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
-        <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+        <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
         <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" />
-
         <header>
           <div className="container">
             <div className="row">
-              <div className="col">
-                <a href className="logo-main">
+              <div className="col-7 col-md-2">
+                <a href='' className="logo-main">
                   <img src="assets/img/logo.png" />
                 </a>
               </div>
-              <div className="col-7">
-                <ul className="nav-top collapse show" id="navbarToggleExternalContent">
+              <div className="col-md-7 nav-cover">
+                <ul className="nav-top">
                   <li>
                     <a href>
                       About us
@@ -28,12 +31,7 @@ class Main extends React.Component {
                   </li>
                   <li>
                     <a href>
-                      Service
-              </a>
-                  </li>
-                  <li>
-                    <a href>
-                      Partners
+                      Product &amp; Service
               </a>
                   </li>
                   <li>
@@ -43,16 +41,35 @@ class Main extends React.Component {
                   </li>
                   <li>
                     <a href>
+                      Partners
+              </a>
+                  </li>
+                  <li>
+                    <a href="contactUs">
                       Contact us
               </a>
                   </li>
+                  <div className="nav-bottom">
+                    <ul>
+                      <li>
+                        <a href>
+                          English
+                  </a>
+                      </li>
+                      <li>
+                        <a href>
+                          ไทย
+                  </a>
+                      </li>
+                    </ul>
+                  </div>
                 </ul>
               </div>
-              <div className="col">
+              <div className="col-5 col-md-3">
+                <a href="login" className="btn-login">Client login</a>
                 {/*  */}
-                {/* <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="true" aria-label="Toggle navigation">
-<span class="navbar-toggler-icon"></span>
-    </button> */}
+                <a className="navbar-toggler">
+                </a>
               </div>
             </div>
           </div>
@@ -68,9 +85,8 @@ class Main extends React.Component {
                   <img src="assets/img/expressorep-title.png" />
                 </h1>
                 <p>
-                  The platform that helps corporate buyers achieve their <br />
-                  renewables goal at ease and meaningful, and create additional revenue <br />
-                  for renewables developers or generator
+                  We help corporate buyers achieve their renewables goal at ease and meaningful, <br />
+                  and create additional revenue for renewables owners
           </p>
                 <a href>
                   Learn more
@@ -78,50 +94,15 @@ class Main extends React.Component {
               </div>
             </div>
             <div className="item-slide">
-              <img className="d-none d-none d-md-block" src="dump/stock-photo-sun-rays-over-a-photovoltaic-power-plant-188611307.jpg" />
+              <img className="d-none d-none d-md-block" src="dump/banner-2.jpg" />
               <img className="d-md-none" src="dump/stock-mobile.jpg" />
               <div className="slide-detail container">
                 <h1>
                   <img src="assets/img/expressorep-title.png" />
                 </h1>
                 <p>
-                  The platform that helps corporate buyers achieve their <br />
-                  renewables goal at ease and meaningful, and create additional revenue <br />
-                  for renewables developers or generator
-          </p>
-                <a href>
-                  Learn more
-          </a>
-              </div>
-            </div>
-            <div className="item-slide">
-              <img className="d-none d-none d-md-block" src="dump/stock-photo-sun-rays-over-a-photovoltaic-power-plant-188611307.jpg" />
-              <img className="d-md-none" src="dump/stock-mobile.jpg" />
-              <div className="slide-detail container">
-                <h1>
-                  <img src="assets/img/expressorep-title.png" />
-                </h1>
-                <p>
-                  The platform that helps corporate buyers achieve their <br />
-                  renewables goal at ease and meaningful, and create additional revenue <br />
-                  for renewables developers or generator
-          </p>
-                <a href>
-                  Learn more
-          </a>
-              </div>
-            </div>
-            <div className="item-slide">
-              <img className="d-none d-none d-md-block" src="dump/stock-photo-sun-rays-over-a-photovoltaic-power-plant-188611307.jpg" />
-              <img className="d-md-none" src="dump/stock-mobile.jpg" />
-              <div className="slide-detail container">
-                <h1>
-                  <img src="assets/img/expressorep-title.png" />
-                </h1>
-                <p>
-                  The platform that helps corporate buyers achieve their <br />
-                  renewables goal at ease and meaningful, and create additional revenue <br />
-                  for renewables developers or generator
+                  We help corporate buyers achieve their renewables goal at ease and meaningful, <br />
+                  and create additional revenue for renewables owners
           </p>
                 <a href>
                   Learn more
@@ -138,46 +119,56 @@ class Main extends React.Component {
           <div className="container">
             <div className="paper">
               <h2>
-                The world’s most influential corporate RE buyer networks
+                Renewable Energy Solutions we offer
         </h2>
               <p>
-                The infrastructure for generating and supplying renewable energy is one of the fastest growing sectors worldwide. <br />
-                Never before has the market environment been more favorable for companies to source green energy and <br />
-                thereby contributing to climate change mitigation.
+                Let us know your renewable energy needs so we can help you achieve your goals <br />
+                through our solution-based products
         </p>
               <div className="re-list">
                 <div className="row justify-content-center">
-                  <div className="col-12 col-sm-10">
+                  <div className="col-12 col-md-10">
                     <div className="row">
-                      <div className="col">
+                      <div className="col-12 col-md-4">
                         <div className="re-image">
                           <img src="dump/stock-photo-photovoltaic-modules-reflect-sunset-light-and-clouds-288145694.jpg" />
                         </div>
                         <div className="re-detail">
                           <h4>
-                            Energy attribute certificates (EACs) Complied with I-REC Standard
+                            Energy Attribute Certificates (EACs)
                     </h4>
                           <p>
-                            We have a vision of a future world where all energy comes from clean or renewable sources.
+                            We help corporates purchase Renewable Energy
+                            Certificates (RECs) in the geography and type of
+                            renewables they want through simple steps
                     </p>
                         </div>
+                        <div className="btn">
+                          <a href>
+                            Learn more
+                    </a>
+                        </div>
                       </div>
-                      <div className="col">
+                      <div className="col-12 col-md-4">
                         <div className="re-image">
                           <img src="dump/stock-photo--d-rendering-of-windturbines-on-the-ocean-31110454.jpg" />
                         </div>
                         <div className="re-detail">
                           <h4>
-                            A power purchase agreement (PPA)
+                            Digital Power Purchase Agreement (PPA)
                     </h4>
                           <p>
-                            To accelerate the transition to this world, we are
-                            striving to incentivize green growth and bring clean
-                            energy to markets everywhere.
+                            We help corporates engage in longer-term PPA
+                            of renewable energy projects
                     </p>
                         </div>
+                        <div className="btn">
+                          <a href>
+                            Learn more
+                    </a>
+                        </div>
                       </div>
-                      <div className="col">
+                      <div className="col-12 col-md-4">
                         <div className="re-image">
                           <img src="dump/stock-photo-ev-car-or-electric-car-at-charging-station-with-the-power-cable-supply-plugged-in-on-blurred-1320569111.jpg" />
                         </div>
@@ -186,10 +177,14 @@ class Main extends React.Component {
                             Green EV charging
                     </h4>
                           <p>
-                            To accelerate the transition to this world, we are
-                            striving to incentivize green growth and bring clean
-                            energy to markets everywhere.
+                            We help corporates track their electric vehicle
+                            fleets on renewables consumption
                     </p>
+                        </div>
+                        <div className="btn">
+                          <a href>
+                            Learn more
+                    </a>
                         </div>
                       </div>
                     </div>
@@ -200,98 +195,70 @@ class Main extends React.Component {
           </div>
         </div>
         <div className="why-join">
-          <div className="container">
-            <div className="top-why">
-              <img src="assets/img/join-text.png" />
-            </div>
-            <div className="row">
-              <div className="col-5 col-md-6 col-lg-5">
-                <div className="comment">
-                  <img src="assets/img/ico-bubble.png" />
-                  <div className="comment-detail">
-                    Companies that prioritize clean technology,
-                    like renewables...are not only being environmentally responsible, they are also future-proofing their
-                    growth by factoring in long-term risk and positioning
-                    themselves as winners of the low-carbon economy.
-                    World Economic Forum
-              <div className="commentator">
-                      <img src="assets/img/img-human.png" />
-                      <div>
-                        Michael Terrell
-                  <span>
-                          Associate Director of Graduate Studies
-                  </span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="col-7 col-md-6 col-lg-7">
-                <p>
-                  The RE-Source Platform is a European alliance of stakeholders representing clean energy buyers and suppliers for corporate renewable energy sourcing. This platform pools resources and coordinates activities to promote a better framework for corporate renewable energy sourcing at EU and national level.
-          </p>
-                <p>
-                  The potential for corporate sourcing of renewable energy in Europe is significant and largely untapped. This is the first and only multi-stakeholder platform in Europe bringing together the interests of both buyers and sellers, to unlock the potential of new business models, accelerate the transition to clean, affordable renewable energy sources and help combat climate change.
-          </p>
-              </div>
-            </div>
+          <div className="top-why container">
+            <h2>
+              Why join <span>Renewables</span> Accel
+      </h2>
+            <img className="d-none d-none d-md-inline" src="assets/img/join-text.png" />
+            <img className="d-md-none" src="assets/img/join-text-m.jpg" />
           </div>
         </div>
         <div className="offer">
           <div className="container">
             <div className="row">
-              <div className="col-12 col-sm-5" />
-              <div className="col-12 col-sm-7">
+              <div className="col-12 col-md-6">
+                <img src="assets/img/offer-notebook.png" />
+              </div>
+              <div className="col-12 col-md-6">
                 <div className="offer-detail">
-                  <h2>
-                    What we offer
-            </h2>
-                  <p>
-                    When you become a member of <img src="assets/img/expresso-text.png" />	, you gain access to a wide range <br />
-                    of educational resources, networking and partnership opportunities, and industry insights:
-            </p>
                   <ul>
                     <li>
                       <div className="img-offer">
-                        <img src="assets/img/offer-1.png" />
+                        <img src="assets/img/offer-1-n.png" />
                       </div>
                       <div className="list-offer">
-                        <h3>
-                          LEARN
-                  </h3>
                         <p>
-                          We will provide primers and guides, templates and training that will
-                          simplify the most important technical issues related to corporate
-                          renewable energy transactions.
+                          Sync with widely accepted standard i.e. International REC (I-REC)
                   </p>
                       </div>
                     </li>
                     <li>
                       <div className="img-offer">
-                        <img src="assets/img/offer-2.png" />
+                        <img src="assets/img/offer-2-n.png" />
                       </div>
                       <div className="list-offer">
-                        <h3>
-                          CONNECT
-                  </h3>
                         <p>
-                          Our online marketplace will connect corporate buyers and renewable
-                          energy generators with available projects. Our industry events will
-                          provide further opportunities to network and share knowledge.
+                          End-to-end easy process from registration, buying, tracking and reporting
                   </p>
                       </div>
                     </li>
                     <li>
                       <div className="img-offer">
-                        <img src="assets/img/offer-3.png" />
+                        <img src="assets/img/offer-3-n.png" />
                       </div>
                       <div className="list-offer">
-                        <h3>
-                          TRACK
-                  </h3>
                         <p>
-                          Our deal tracker showcases new corporate renewable energy
-                          contracts as they are announced.
+                          More products with their impact details to mix/match to achieve renewables goal
+                  </p>
+                      </div>
+                    </li>
+                    <li>
+                      <div className="img-offer">
+                        <img src="assets/img/offer-4-n.png" />
+                      </div>
+                      <div className="list-offer">
+                        <p>
+                          Outperform current tracking tools
+                  </p>
+                      </div>
+                    </li>
+                    <li>
+                      <div className="img-offer">
+                        <img src="assets/img/offer-5-n.png" />
+                      </div>
+                      <div className="list-offer">
+                        <p>
+                          No double counting
                   </p>
                       </div>
                     </li>
@@ -307,182 +274,106 @@ class Main extends React.Component {
               News <span><img src="assets/img/ico-slash.png" /></span> Events
       </h2>
             <div className="news-list">
-              <ul className="row">
-                <li className>
-                  <div>
-                    <div className="news-img">
-                      <img src="dump/stock-photo--d-rendering-of-windturbines-on-the-ocean-31110454.jpg" />
-                    </div>
-                    <div className="news-desc">
-                      <h3>
-                        Proposed Offshore Wind Turbine Development to add 2.8GW of renewable power capacity to the UK
-                </h3>
-                      <p>
-                        We have a vision of a future world where all energy comes from clean or renewable sources.
-                </p>
-                      <span className="meta">
-                        09 August 2019
-                </span>
-                    </div>
-                    <div className="news-more">
-                      <h3>
-                        Proposed Offshore Wind Turbine Development to add 2.8GW of renewable power capacity to the UK
-                </h3>
-                      <p>
-                        A new report by Bloomberg NEF has
-                        highlighted that the demand for clean energy
-                        is set to grow.
-                </p>
-                      <p>
-                        The New Energy Outlook combined the
-                        expertise of over 65 market and technology
-                        specialists in 12 countries to provide a unique
-                        view of how the market will evolve.
-                </p>
-                      <p>
-                        The outlook predicts that global power
-                        demand will grow by 62 per cent between
-                        now and 2050, equating to 1.5 per cent a year.
-                        09 August 2019
-                </p>
-                      <span className="meta">
-                        09 August 2019
-                </span>
-                    </div>
-                  </div>
-                </li>
-                <li className>
-                  <div>
-                    <div className="news-img">
-                      <img src="dump/stock-photo-photovoltaic-modules-reflect-sunset-light-and-clouds-288145694.jpg" />
-                    </div>
-                    <div className="news-desc">
-                      <h3>
-                        Aggressive decarbonisation needed to limit global temperature rise to 1.5C </h3>
-                      <p>
-                        A new report by Bloomberg NEF has
-                        highlighted that the demand for clean energy
-                        is set to grow.
-                </p>
-                      <span className="meta">
-                        09 August 2019
-                </span>
-                    </div>
-                    <div className="news-more">
-                      <h3>
-                        Amazon unveils latest renewable energy projects
-                </h3>
-                      <p>
-                        A new report by Bloomberg NEF has
-                        highlighted that the demand for clean energy
-                        is set to grow.
-                </p>
-                      <p>
-                        The New Energy Outlook combined the
-                        expertise of over 65 market and technology
-                        specialists in 12 countries to provide a unique
-                        view of how the market will evolve.
-                </p>
-                      <p>
-                        The outlook predicts that global power
-                        demand will grow by 62 per cent between
-                        now and 2050, equating to 1.5 per cent a year.
-                        09 August 2019
-                </p>
-                      <span className="meta">
-                        09 August 2019
-                </span>
-                    </div>
-                  </div>
-                </li>
-                <li className>
-                  <div>
-                    <div className="news-img">
-                      <img src="dump/stock-photo-photovoltaic-panels-for-renewable-electric-production-navarra-aragon-spain-500035789.jpg" />
-                    </div>
-                    <div className="news-desc">
-                      <h3>
-                        Amazon unveils latest renewable energy projects
-                </h3>
-                      <p>
-                        A new report by Bloomberg NEF has
-                        highlighted that the demand for clean energy
-                        is set to grow.
-                </p>
-                      <span className="meta">
-                        09 August 2019
-                </span>
-                    </div>
-                    <div className="news-more">
-                      <h3>
-                        Aggressive decarbonisation needed to limit global temperature rise to 1.5C </h3>
-                      <p>
-                        A new report by Bloomberg NEF has
-                        highlighted that the demand for clean energy
-                        is set to grow.
-                </p>
-                      <p>
-                        The New Energy Outlook combined the
-                        expertise of over 65 market and technology
-                        specialists in 12 countries to provide a unique
-                        view of how the market will evolve.
-                </p>
-                      <p>
-                        The outlook predicts that global power
-                        demand will grow by 62 per cent between
-                        now and 2050, equating to 1.5 per cent a year.
-                        09 August 2019
-                </p>
-                      <span className="meta">
-                        09 August 2019
-                </span>
-                    </div>
-                  </div>
-                </li>
-                <li className>
-                  <div>
-                    <div className="news-img">
-                      <img src="dump/stock-photo-ev-car-or-electric-car-at-charging-station-with-the-power-cable-supply-plugged-in-on-blurred-1320569111.jpg" />
-                    </div>
-                    <div className="news-desc">
-                      <h3>
-                        Aggressive decarbonisation needed to limit global temperature rise to 1.5C </h3>
-                      <p>
-                        A new report by Bloomberg NEF has
-                        highlighted that the demand for clean energy
-                        is set to grow.
-                </p>
-                      <span className="meta">
-                        09 August 2019
-                </span>
-                    </div>
-                    <div className="news-more">
-                      <h3>
-                        Aggressive decarbonisation needed to limit global temperature rise to 1.5C </h3>
-                      <p>
-                        A new report by Bloomberg NEF has
-                        highlighted that the demand for clean energy
-                        is set to grow.
-                </p>
-                      <p>
-                        The New Energy Outlook combined the
-                        expertise of over 65 market and technology
-                        specialists in 12 countries to provide a unique
-                        view of how the market will evolve.
-                </p>
-                      <p>
-                        The outlook predicts that global power
-                        demand will grow by 62 per cent between
-                        now and 2050, equating to 1.5 per cent a year.
-                        09 August 2019
-                </p>
-                      <span className="meta">
-                        09 August 2019
-                </span>
-                    </div>
-                  </div>
-                </li>
-              </ul>
+              <div className="row row justify-content-center">
+                <div className="col-12 col-xl-10">
+                  <ul>
+                    <li className>
+                      <div>
+                        <a target="_blank" href="https://finance.yahoo.com/news/thailand-national-utility-launches-ethereum-145600093.html">
+                          <div className="news-img">
+                            <img src="dump/news-im.jpg" />
+                          </div>
+                          <div className="news-desc">
+                            <h3>
+                              Thailand’s national utility launches Ethereum-based renewable energy platform
+                      </h3>
+                            <p>
+                              Thailand’s state-owned energy company, PTT, has partnered with the nonprofit Energy Web Foundation to create a new blockchain-based renewable energy system.
+                      </p>
+                            <span className="meta">
+                              15 September 2019
+                      </span>
+                          </div>
+                          <div className="news-more">
+                            <h3>
+                              Thailand’s national utility launches Ethereum-based renewable energy platform
+                      </h3>
+                            <p>Thailand’s state-owned energy company, PTT, has partnered with the nonprofit Energy Web Foundation to create a new blockchain-based renewable energy system.</p>
+                            <p>Their goal is to develop a regional energy solution that’s compliant with the International Renewable Energy Certificates Standard (I-REC), which provides certificates to companies verifying that their green energy is legitimate and derived from a reliable and sustainable source.</p>
+                            <span className="meta">
+                              15 September 2019
+                      </span>
+                          </div>
+                        </a></div><a target="_blank" href="https://finance.yahoo.com/news/thailand-national-utility-launches-ethereum-145600093.html">
+                      </a>
+                    </li>
+                    <li className>
+                      <div>
+                        <a target="_blank" href="https://www.energyweb.org/2019/09/11/ptt-and-energy-web-foundation-launch-blockchain-based-renewables-platform-for-thailand-asean-japan/">
+                          <div className="news-img">
+                            <img src="dump/news-im-2.jpg" />
+                          </div>
+                          <div className="news-desc">
+                            <h3>
+                              PTT and Energy Web Foundation Launch Blockchain-based Renewables Platform for Thailand, ASEAN, Japan</h3>
+                            <p>
+                              New tool will support corporate renewable purchases in the region, with fully commercial application expected by May 2020
+                      </p>
+                            <span className="meta">
+                              11 September 2019
+                      </span>
+                          </div>
+                          <div className="news-more">
+                            <h3>
+                              PTT and Energy Web Foundation Launch Blockchain-based Renewables Platform for Thailand, ASEAN, Japan
+                      </h3>
+                            <p>
+                              New tool will support corporate renewable purchases in the region, with fully commercial application expected by May 2020
+                      </p>
+                            <p>
+                              Bangkok, Thailand, and Zug, Switzerland — September 11, 2019 — Today, Thailand-based multinational energy conglomerate PTT and global energy blockchain nonprofit Energy Web Foundation (EWF) jointly announced the development of a new blockchain-based renewables platform.
+                      </p>
+                            <span className="meta">
+                              11 September 2019
+                      </span>
+                          </div>
+                        </a>
+                      </div>
+                    </li>
+                    <li className>
+                      <div>
+                        <a target="_blank" href="https://www.ledgerinsights.com/ptt-blockchain-renewable-energy-marketplace-rec-ewf/">
+                          <div className="news-img">
+                            <img src="dump/stock-photo-photovoltaic-panels-for-renewable-electric-production-navarra-aragon-spain-500035789.jpg" />
+                          </div>
+                          <div className="news-desc">
+                            <h3>
+                              PTT to launch blockchain renewable energy marketplace
+                      </h3>
+                            <p>
+                              Today state-owned Thai energy conglomerate PTT announced plans to develop a blockchain-based renewables marketplace in collaboration with Energy Web Foundation (EWF)
+                      </p>
+                            <span className="meta">
+                              09 August 2019
+                      </span>
+                          </div>
+                          <div className="news-more">
+                            <h3>
+                              PTT to launch blockchain renewable energy marketplace
+                      </h3>
+                            <p>
+                              Today state-owned Thai energy conglomerate PTT announced plans to develop a blockchain-based renewables marketplace in collaboration with Energy Web Foundation (EWF), an energy blockchain nonprofit. The launch of the full PTT Renewables Marketplace Platform is set for May 2020.
+                      </p>
+                            <span className="meta">
+                              09 August 2019
+                      </span>
+                          </div>
+                        </a>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </div>
             <div className="btn">
               <a href>
@@ -494,24 +385,20 @@ class Main extends React.Component {
         <div className="founding-member">
           <div className="container">
             <h2>
-              Founding members <span><img src="assets/img/ico-slash.png" /></span> Partners
+              Partners
       </h2>
             <ul className="mem-1">
               <li>
-                <img src="assets/img/founder-member.jpg" />
+                <img className="d-none d-none d-md-inline" src="assets/img/founder-member.png" />
+                <img className="d-md-none" src="assets/img/founder-member-m.png" />
               </li>
             </ul>
-            {/* <ul class="mem-2">
-				<li>
-					
-				</li>
-			</ul> */}
             <div>
               <h4>
-                Do you want to become a <img src="assets/img/expresso-text.png" /> member?
+                Do you want to become a <strong>Renewables Accel</strong> member?
         </h4>
-              <a className="btn" href>
-                Register Now
+              <a className="btn" href='#'>
+                Subscribe Now
         </a>
             </div>
           </div>
@@ -520,31 +407,16 @@ class Main extends React.Component {
           <div className="footer-nav">
             <div className="container">
               <div className="row">
-                <div className="col col-md-9">
+                <div className="col-12 col-md-9">
                   <ul className="nav-footer">
                     <li>
-                      <a href>
+                      <a href="/">
                         Home
                 </a>
                     </li>
                     <li>
                       <a href>
-                        Products
-                </a>
-                    </li>
-                    <li>
-                      <a href>
-                        About us
-                </a>
-                    </li>
-                    <li>
-                      <a href>
-                        Service
-                </a>
-                    </li>
-                    <li>
-                      <a href>
-                        Partners
+                        Product &amp; Service
                 </a>
                     </li>
                     <li>
@@ -554,12 +426,17 @@ class Main extends React.Component {
                     </li>
                     <li>
                       <a href>
+                        Partners
+                </a>
+                    </li>
+                    <li>
+                      <a href="contactus">
                         Contact us
                 </a>
                     </li>
                   </ul>
                 </div>
-                <div className="col col-md-3">
+                <div className="col-12 col-md-3 d-none d-none d-md-block">
                   <span>Follow us:</span>
                   <ul>
                     <li>
@@ -580,6 +457,28 @@ class Main extends React.Component {
                   </ul>
                 </div>
               </div>
+            </div>
+          </div>
+          <div className="d-md-none footer-follow">
+            <div className="container">
+              <span>Follow us:</span>
+              <ul>
+                <li>
+                  <a href target="_blank">
+                    <img src="assets/img/Icon_Social_01.png" />
+                  </a>
+                </li>
+                <li>
+                  <a href target="_blank">
+                    <img src="assets/img/Icon_Social_02.png" />
+                  </a>
+                </li>
+                <li>
+                  <a href target="_blank">
+                    <img src="assets/img/Icon_Social_03.png" />
+                  </a>
+                </li>
+              </ul>
             </div>
           </div>
           <div className="footer-copyright">
@@ -608,7 +507,8 @@ class Main extends React.Component {
           </div>
           <div className="btn-totop">
             <a href>
-              <img src="assets/img/ico-top.png" />
+              <img className="d-none d-none d-md-block" src="assets/img/ico-top.png" />
+              <img className="d-md-none" src="assets/img/ico-top-m.png" />
             </a>
           </div>
         </footer>

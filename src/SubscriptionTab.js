@@ -4,7 +4,7 @@ import config from './config'
 
 const { baseUrl } = config
 const initState = {
-    type: 'seller',
+    type: 'buyer',
     name: '',
     email: '',
     company: '',
@@ -23,7 +23,7 @@ const initState = {
 class SubscriptionTab extends React.Component {
     constructor() {
         super()
-        this.state = { ...initState, type: 'seller' }
+        this.state = { ...initState, type: 'buyer' }
         this.handleTabBuyer = this.handleTabBuyer.bind(this)
         this.handleTabSeller = this.handleTabSeller.bind(this)
         this.handleChange = this.handleChange.bind(this)
@@ -81,8 +81,8 @@ class SubscriptionTab extends React.Component {
     }
 
     renderHeader() {
-        var headerText = this.state.type === 'seller' ? 'Seller energy registration' : 'Buyer energy registration'
-        var bodyText = 'Directly from projects, please fill in the form below if you would like our help connecting with power plans.'
+        var headerText = this.state.type === 'buyer' ? 'Buying renewables' : 'Selling energy registration'
+        var bodyText = this.state.type === 'buyer' ? 'Learn how we can help you achieverenewable energy target, please leave your contact here' : 'Directly from projects, please fill in the form below if you would like our help connecting with power plans.'
 
         return (
             <div>
@@ -165,21 +165,24 @@ class SubscriptionTab extends React.Component {
     render() {
         return (
             <div className="form-tab-list">
+                <div className="form-top">
+                    Subscribe for further information
+                </div>
                 <ul>
                     <li className='active'>
-                        <a href='/#' onClick={this.handleTabSeller}>Seller</a>
+                        <a href='/#' onClick={this.handleTabBuyer}>Buyer</a>
                     </li>
                     <li>
-                        <a href='/#' onClick={this.handleTabBuyer}>Buyer</a>
+                        <a href='/#' onClick={this.handleTabSeller}>Seller</a>
                     </li>
                 </ul>
                 <div className="form-tab">
-                    <div className="form-tab-seller active ">
+                    <div className="form-tab-buyer active ">
                         {this.renderHeader()}
                         {this.renderForm()}
                         {this.renderButton()}
                     </div>
-                    <div className="form-tab-buyer ">
+                    <div className="form-tab-seller ">
                         {this.renderHeader()}
                         {this.renderForm()}
                         {this.renderButton()}
