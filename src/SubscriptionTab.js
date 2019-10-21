@@ -119,7 +119,7 @@ class SubscriptionTab extends React.Component {
             <div>
                 <p>
                     Choosing <strong>Submit</strong> means that you agree to
-                    the <a href>Terms of Use</a> and <a href>Privacy Policy.</a>
+                    the <a href='terms_of_use'>Terms of Use</a> and <a href='privacy_policy'>Privacy Policy.</a>
                 </p>
                 <div className="btn">
                     <a href="/#" style={!this.state.isValidEmail ? {opacity: 0.7}: {}} onClick={this.handleSubmit}>Submit</a>

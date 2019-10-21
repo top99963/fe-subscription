@@ -61,7 +61,7 @@ class ContactUs extends React.Component {
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="#">
+                                        <a href="/products">
                                             Product &amp; Service
                                     </a>
                                     </li>
@@ -178,7 +178,7 @@ class ContactUs extends React.Component {
                 </a>
                                         </li>
                                         <li>
-                                            <a href="#">
+                                            <a href="/products">
                                                 Product &amp; Service
                 </a>
                                         </li>
