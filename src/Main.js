@@ -16,7 +16,7 @@ class Main extends React.Component {
     } else if (id ==='about') {
       scroll.scrollTo(742)
     } else if (id ==='partners') {
-      scroll.scrollTo(5000)
+      scroll.scrollTo(3400)
     }
   }
   render() {
