@@ -56,7 +56,7 @@ class ContactUs extends React.Component {
                             <div className="col-md-7 nav-cover">
                                 <ul className="nav-top">
                                     <li>
-                                        <a href>
+                                        <a href="/#about">
                                             About us
                                         </a>
                                     </li>
@@ -66,12 +66,12 @@ class ContactUs extends React.Component {
                                     </a>
                                     </li>
                                     <li>
-                                        <a href="#">
+                                        <a href="/#news">
                                             News
                                     </a>
                                     </li>
                                     <li>
-                                        <a href="#">
+                                        <a href="/#partners">
                                             Partners
                                     </a>
                                     </li>
@@ -183,12 +183,12 @@ class ContactUs extends React.Component {
                 </a>
                                         </li>
                                         <li>
-                                            <a href="#">
+                                            <a href="/#news">
                                                 News
                 </a>
                                         </li>
                                         <li>
-                                            <a href="#">
+                                            <a href="/#partners">
                                                 Partners
                 </a>
                                         </li>
@@ -251,18 +251,13 @@ class ContactUs extends React.Component {
                                     © 2019 Expresso rep. All Rights Reserved.
           </li>
                                 <li>
-                                    <a href="#">
+                                    <a href="terms_of_use">
                                         Terms and conditions
             </a>
                                 </li>
                                 <li>
-                                    <a href="#">
+                                    <a href="privacy_policy">
                                         Privacy Policy
-            </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        Cookie Policy
             </a>
                                 </li>
                             </ul>

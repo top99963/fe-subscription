@@ -1,5 +1,6 @@
 import React from 'react';
 import SubscriptionTab from './SubscriptionTab'
+import {animateScroll as scroll } from 'react-scroll'
 
 const initState = {}
 
@@ -8,7 +9,16 @@ class Main extends React.Component {
     super()
     this.state = { ...initState }
   }
-
+  componentDidMount() {
+    const id = window.location.hash.substr(1);
+    if (id === 'news') {
+      scroll.scrollTo(2690)
+    } else if (id ==='about') {
+      scroll.scrollTo(742)
+    } else if (id ==='partners') {
+      scroll.scrollTo(5000)
+    }
+  }
   render() {
     return (
       <div>
@@ -27,22 +37,22 @@ class Main extends React.Component {
               <div className="col-md-7 nav-cover">
                 <ul className="nav-top">
                   <li>
-                    <a href="/#">
+                    <a href="#">
                       About us
               </a>
                   </li>
                   <li>
-                    <a href="/products">
+                    <a href="products">
                       Product &amp; Service
               </a>
                   </li>
                   <li>
-                    <a href="/#">
+                    <a href="#">
                       News
               </a>
                   </li>
                   <li>
-                    <a href="/#">
+                    <a href="#">
                       Partners
               </a>
                   </li>
@@ -424,17 +434,17 @@ class Main extends React.Component {
                 </a>
                     </li>
                     <li>
-                      <a href="/#">
+                      <a href="#">
                         News
                 </a>
                     </li>
                     <li>
-                      <a href="/#">
+                      <a href="#">
                         Partners
                 </a>
                     </li>
                     <li>
-                      <a href="contactus">
+                      <a href="contactUs">
                         Contact us
                 </a>
                     </li>
@@ -492,18 +502,13 @@ class Main extends React.Component {
                   © 2019 Expresso rep. All Rights Reserved.
           </li>
                 <li>
-                  <a href="/#">
+                  <a href="tems_of_use">
                     Terms and conditions
             </a>
                 </li>
                 <li>
-                  <a href="/#">
+                  <a href="privacy_policy">
                     Privacy Policy
-            </a>
-                </li>
-                <li>
-                  <a href="/#">
-                    Cookie Policy
             </a>
                 </li>
               </ul>
