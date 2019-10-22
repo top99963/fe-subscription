@@ -1,6 +1,6 @@
 import React from 'react';
 import SubscriptionTab from './SubscriptionTab'
-import {animateScroll as scroll } from 'react-scroll'
+import { animateScroll as scroll } from 'react-scroll'
 
 const initState = {}
 
@@ -13,9 +13,9 @@ class Main extends React.Component {
     const id = window.location.hash.substr(1);
     if (id === 'news') {
       scroll.scrollTo(2690)
-    } else if (id ==='about') {
+    } else if (id === 'about') {
       scroll.scrollTo(742)
-    } else if (id ==='partners') {
+    } else if (id === 'partners') {
       scroll.scrollTo(3400)
     }
   }
@@ -429,6 +429,11 @@ class Main extends React.Component {
                 </a>
                     </li>
                     <li>
+                      <a href="#">
+                        About us
+                </a>
+                    </li>
+                    <li>
                       <a href="/products">
                         Product &amp; Service
                 </a>
@@ -450,7 +455,7 @@ class Main extends React.Component {
                     </li>
                   </ul>
                 </div>
-                <div className="col-12 col-md-3 d-none d-none d-md-block">
+                {/* <div className="col-12 col-md-3 d-none d-none d-md-block">
                   <span>Follow us:</span>
                   <ul>
                     <li>
@@ -469,7 +474,7 @@ class Main extends React.Component {
                       </a>
                     </li>
                   </ul>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>

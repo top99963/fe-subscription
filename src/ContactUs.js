@@ -178,6 +178,11 @@ class ContactUs extends React.Component {
                 </a>
                                         </li>
                                         <li>
+                                            <a href="/about">
+                                                About us
+                </a>
+                                        </li>
+                                        <li>
                                             <a href="/products">
                                                 Product &amp; Service
                 </a>
@@ -199,7 +204,7 @@ class ContactUs extends React.Component {
                                         </li>
                                     </ul>
                                 </div>
-                                <div className="col-12 col-md-3 d-none d-none d-md-block">
+                                {/* <div className="col-12 col-md-3 d-none d-none d-md-block">
                                     <span>Follow us:</span>
                                     <ul>
                                         <li>
@@ -218,7 +223,7 @@ class ContactUs extends React.Component {
                                             </a>
                                         </li>
                                     </ul>
-                                </div>
+                                </div> */}
                             </div>
                         </div>
                     </div>
