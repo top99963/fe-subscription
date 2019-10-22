@@ -28,7 +28,7 @@ class Login extends React.Component {
         axios.post(baseUrl + '/login', this.state)
             .then(res => {
                 if (res.data) {
-                    window.location.replace('http://www.expresso-origin.pttplc.com')
+                    window.location.replace('http://www.expresso-origin.pttplc.com:8545')
                 }
             })
             .catch(err => {
