@@ -212,7 +212,8 @@ header {
         line-height: 1; }
         @media (max-width: 768px) {
           header ul li a {
-            font-size: 5rem; } }
+            font-size: 5rem;
+            display: block; } }
         @media (max-width: 480px) {
           header ul li a {
             font-size: 2.8rem; } }
@@ -2303,22 +2304,23 @@ footer {
               top: 12px; } }
           @media (max-width: 640px) {
             footer .footer-copyright ul li::after {
-              height: 15px; } }
+              top: 8px; } }
           @media (max-width: 480px) {
             footer .footer-copyright ul li::after {
-              top: 6px; } }
+              top: 6px;
+              height: 15px;
+              right: 7px; } }
           @media (max-width: 410px) {
             footer .footer-copyright ul li::after {
               height: 13px;
               right: 9px;
               top: 4px; } }
-        footer .footer-copyright ul li:first-child {
-          padding-right: 0; }
-          @media (max-width: 768px) {
-            footer .footer-copyright ul li:first-child {
-              display: block; }
-              footer .footer-copyright ul li:first-child::after {
-                content: none; } }
+        @media (max-width: 768px) {
+          footer .footer-copyright ul li:first-child {
+            padding-right: 0;
+            display: block; }
+            footer .footer-copyright ul li:first-child::after {
+              content: none; } }
         footer .footer-copyright ul li:last-child {
           padding-right: 0; }
           footer .footer-copyright ul li:last-child::after {
@@ -2609,7 +2611,7 @@ footer {
 
 .page-product {
   position: relative;
-  padding-top: 30px;
+  padding-top: 60px;
   font-size: 2rem;
   color: #252525;
   background-color: #f7f7f7; }
@@ -3171,9 +3173,8 @@ footer {
         font-size: 2.2rem;
         padding: 30px 0 15px; } }
     .page-privacy .privacy-wrap h2 {
-      font-size: 4.2rem;
-      font-family: 'DBHelvethaicaX-Med';
-      font-weight: 800; }
+      font-size: 2.7rem;
+      font-family: 'DBHelvethaicaX-Med'; }
       @media (max-width: 768px) {
         .page-privacy .privacy-wrap h2 {
           font-size: 3.3rem; } }
@@ -3296,9 +3297,8 @@ footer {
         font-size: 2.2rem;
         padding: 30px 0 15px; } }
     .page-terms .terms-wrap h2 {
-      font-size: 4.2rem;
-      font-family: 'DBHelvethaicaX-Med';
-      font-weight: 800; }
+      font-size: 2.7rem;
+      font-family: 'DBHelvethaicaX-Med'; }
       @media (max-width: 768px) {
         .page-terms .terms-wrap h2 {
           font-size: 3.3rem; } }
