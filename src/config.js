@@ -3,7 +3,7 @@ const dev = {
 }
 
 const prod = {
-    baseUrl: 'http://www.expresso-origin.pttplc.com:2222'
+    baseUrl: 'http://www.reacc.io:2222/subscripe'
 }
 
 var config = process.env.NODE_ENV === 'production' ? prod : dev
