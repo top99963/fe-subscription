@@ -3,7 +3,7 @@ const dev = {
 }
 
 const prod = {
-    baseUrl: 'http://www.reacc.io:2222/subscripe'
+    baseUrl: 'http://www.reacc.io:2222'
 }
 
 var config = process.env.NODE_ENV === 'production' ? prod : dev
