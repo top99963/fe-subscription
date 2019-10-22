@@ -124,9 +124,9 @@ class ContactUs extends React.Component {
                                         <div className="contact-interact">
                                             <div className="row">
                                                 <div className="col">
-                                                    <a className="btn-mail" href="mailto:pttexpresso@pttplc.com">
+                                                    <a className="btn-mail" href="mailto:info@reacc.io">
                                                         <span>Email<br />
-                                                            <span>pttexpresso@pttplc.com</span></span>
+                                                            <span>info@reacc.io</span></span>
                                                     </a>
                                                 </div>
                                                 <div className="col">

@@ -54,7 +54,7 @@ class Login extends React.Component {
                                     Please enter your username and password to access <br />the<strong> Renewables Accel</strong>
                                 </p>
                                 <div className="form form-login">
-                                    <div className="form-group warning">
+                                    <div className="form-group">
                                         <input name='username' value={this.state.username} onChange={this.handleChange} placeholder="Username" />
                                     </div>
                                     <div className="form-group">
