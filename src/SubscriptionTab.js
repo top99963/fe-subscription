@@ -84,8 +84,8 @@ class SubscriptionTab extends React.Component {
     }
 
     renderHeader() {
-        var headerText = this.state.type === 'buyer' ? 'Buying renewables' : 'Selling energy registration'
-        var bodyText = this.state.type === 'buyer' ? 'Learn how we can help you achieverenewable energy target, sign up for more information and demo' : 'Directly from projects, please fill in the form below if you would like our help connecting with power plans.'
+        var headerText = this.state.type === 'buyer' ? 'Buying renewables' : 'Selling renewables'
+        var bodyText = this.state.type === 'buyer' ? 'Learn how we can help you achieverenewable energy target, sign up for more information and demo' : 'Learn how your renewables assets can create additional value. Sign up for more information and demo.'
 
         return (
             <div>

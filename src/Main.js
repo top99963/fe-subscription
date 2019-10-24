@@ -507,7 +507,7 @@ class Main extends React.Component {
                   © 2019 Expresso rep. All Rights Reserved.
           </li>
                 <li>
-                  <a href="tems_of_use">
+                  <a href="terms_of_use">
                     Terms and conditions
             </a>
                 </li>
