@@ -1,0 +1,259 @@
+.re-image {
+    position: relative;
+    max-height: 240px;
+    overflow: hidden;
+}
+
+@media (max-width: 1280px) {
+    .re-image {
+        max-height: 200px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .re-image {
+        max-height: 160px;
+    }
+}
+
+@media (max-width: 768px) {
+    .re-image {
+        max-height: 380px;
+    }
+}
+
+@media (max-width: 480px) {
+    .re-image {
+        max-height: 240px;
+    }
+}
+
+@media (max-width: 410px) {
+    .re-image {
+        max-height: 180px;
+    }
+}
+
+.re-image::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: block;
+    background-image: url("/assets/img/corner-curl.jpg");
+    background-size: 100%;
+    width: 40px;
+    height: 40px;
+}
+
+@media (max-width: 1024px) {
+    .re-image::after {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .re-image::after {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+.re-image img {
+    min-height: 240px;
+}
+
+@media (max-width: 1280px) {
+    .re-image img {
+        min-height: 200px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .re-image img {
+        min-height: 160px;
+    }
+}
+
+@media (max-width: 768px) {
+    .re-image img {
+        min-height: 380px;
+    }
+}
+
+@media (max-width: 480px) {
+    .re-image img {
+        min-height: 0;
+    }
+}
+
+.re-detail {
+    padding: 0 15px;
+    font-size: 2.2rem;
+    color: #595959;
+    min-height: 200px;
+}
+
+@media (max-width: 1199px) {
+    .re-detail {
+        min-height: 230px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .re-detail {
+        font-size: 2rem;
+        min-height: 200px;
+        padding: 0 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .re-detail {
+        padding: 0 40px;
+        margin-bottom: 40px;
+    }
+}
+
+@media (max-width: 640px) {
+    .re-detail {
+        padding: 0 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    .re-detail {
+        padding: 0 25px;
+        margin-bottom: 30px;
+        min-height: 0;
+    }
+}
+
+@media (max-width: 410px) {
+    .re-detail {
+        padding: 0 20px;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 375px) {
+    .re-detail {
+        padding: 0 15px;
+    }
+}
+
+@media (max-width: 320px) {
+    .re-detail {
+        padding: 0 10px;
+    }
+}
+
+.re-detail h4 {
+    font-family: 'DBHelvethaicaX-Reg';
+    font-weight: 600;
+    font-size: 2.8rem;
+    line-height: 1;
+    padding: 20px 0 10px;
+    color: #000;
+}
+
+@media (max-width: 1024px) {
+    .re-detail h4 {
+        padding: 15px 0 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .re-detail h4 {
+        font-size: 4.5rem;
+        padding-top: 50px;
+        padding-bottom: 20px;
+    }
+}
+
+@media (max-width: 640px) {
+    .re-detail h4 {
+        font-size: 3.7rem;
+        padding-bottom: 15px;
+        padding-top: 40px;
+    }
+}
+
+@media (max-width: 480px) {
+    .re-detail h4 {
+        font-size: 2.8rem;
+        padding-top: 30px;
+        padding-bottom: 5px;
+    }
+}
+
+@media (max-width: 375px) {
+    .re-detail h4 {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 320px) {
+    .re-detail h4 {
+        padding-top: 20px;
+    }
+}
+
+.btn {
+    display: block;
+    text-align: center;
+}
+
+.btn a {
+    font-size: 2.4rem;
+    padding: 2px 30px;
+    border-radius: 25px;
+    background-color: #fff;
+    border: 1px solid #1b1464;
+    display: inline-block;
+    color: #1b1464;
+}
+
+@media (max-width: 1280px) {
+    .btn a {
+        font-size: 2.2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .btn a {
+        font-size: 4.5rem;
+        padding: 3px 60px;
+        border-radius: 100px;
+        margin-bottom: 100px;
+    }
+}
+
+@media (max-width: 640px) {
+    .btn a {
+        font-size: 3.7rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .btn a {
+        padding: 3px 30px;
+        font-size: 2.8rem;
+        margin-bottom: 70px;
+    }
+}
+
+@media (max-width: 410px) {
+    .btn a {
+        font-size: 2.2rem;
+        margin-bottom: 60px;
+    }
+}
+
+@media (max-width: 375px) {
+    .btn a {
+        margin-top: 10px;
+        margin-bottom: 50px;
+    }
+}

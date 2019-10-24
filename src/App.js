@@ -6,12 +6,14 @@ import ContactUs from './ContactUs'
 import ProductsPage from './ProductsPage'
 import TermsOfUsePage from './TermsOfUsePage'
 import PrivacyPolicyPage from './PrivacyPolicyPage'
+import Landing from './page/Landing'
 
 function App() {
   return (
     <Router>
       <Route exact path="/" component={Main} />
       <Route path="/login" component={Login} />
+      <Route path="/landing" component={Landing} />
       <Route path="/contactUs" component={ContactUs} />
       <Route path="/products" component={ProductsPage} />
       <Route path="/terms_of_use" component={TermsOfUsePage} />

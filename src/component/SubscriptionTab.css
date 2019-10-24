@@ -1,0 +1,351 @@
+.form-tab-list {
+    position: absolute;
+    width: 325px;
+    top: 140px;
+    right: 5%;
+    z-index: 1;
+    font-size: 2rem;
+    line-height: .9;
+    color: #464646; }
+    .form-tab-list.warning {
+      background-color: #fff; }
+      .form-tab-list.warning .form-tab-seller, .form-tab-list.warning .form-tab-buyer {
+        background-color: #fff; }
+    @media (max-width: 768px) {
+      .form-tab-list {
+        position: relative;
+        top: auto;
+        right: auto;
+        width: 100%;
+        font-size: 3.9rem; } }
+    @media (max-width: 640px) {
+      .form-tab-list {
+        font-size: 3.3rem; } }
+    @media (max-width: 480px) {
+      .form-tab-list {
+        font-size: 2.4rem; } }
+    @media (max-width: 410px) {
+      .form-tab-list {
+        font-size: 1.9rem; } }
+    .form-tab-list .form-top {
+      font-family: 'DBHelvethaicaX-Reg';
+      font-size: 3.2rem;
+      padding: 15px 30px;
+      background-color: #06080d;
+      color: #fff;
+      line-height: .8; }
+      @media (max-width: 1440px) {
+        .form-tab-list .form-top {
+          font-size: 3rem; } }
+      @media (max-width: 1024px) {
+        .form-tab-list .form-top {
+          font-size: 2.8rem; } }
+      @media (max-width: 768px) {
+        .form-tab-list .form-top {
+          padding: 40px 30px;
+          font-size: 6rem;
+          text-align: center; } }
+      @media (max-width: 640px) {
+        .form-tab-list .form-top {
+          padding: 30px;
+          font-size: 5rem; } }
+      @media (max-width: 480px) {
+        .form-tab-list .form-top {
+          font-size: 3.8rem; } }
+      @media (max-width: 410px) {
+        .form-tab-list .form-top {
+          padding: 25px;
+          font-size: 2.9rem; } }
+      @media (max-width: 375px) {
+        .form-tab-list .form-top {
+          padding: 20px;
+          font-size: 2.7rem; } }
+    @media (max-width: 768px) {
+      .form-tab-list .form-tab {
+        height: 1300px; } }
+    @media (max-width: 640px) {
+      .form-tab-list .form-tab {
+        height: 1150px; } }
+    @media (max-width: 480px) {
+      .form-tab-list .form-tab {
+        height: 900px; } }
+    @media (max-width: 410px) {
+      .form-tab-list .form-tab {
+        height: 750px; } }
+    @media (max-width: 375px) {
+      .form-tab-list .form-tab {
+        height: 700px; } }
+    .form-tab-list .form-tab-seller, .form-tab-list .form-tab-buyer {
+      clear: both;
+      position: absolute;
+      top: 50px;
+      top: 127px;
+      width: 100%;
+      padding: 15px 30px 20px;
+      background-color: rgba(255, 255, 255, 0.9);
+      opacity: 0;
+      z-index: -2; }
+      @media (max-width: 1440px) {
+        .form-tab-list .form-tab-seller, .form-tab-list .form-tab-buyer {
+          top: 125px;
+          padding: 20px 30px; } }
+      @media (max-width: 1280px) {
+        .form-tab-list .form-tab-seller, .form-tab-list .form-tab-buyer {
+          padding: 20px 30px; } }
+      @media (max-width: 1024px) {
+        .form-tab-list .form-tab-seller, .form-tab-list .form-tab-buyer {
+          top: 121px; } }
+      @media (max-width: 992px) {
+        .form-tab-list .form-tab-seller, .form-tab-list .form-tab-buyer {
+          top: 95px; } }
+      @media (max-width: 768px) {
+        .form-tab-list .form-tab-seller, .form-tab-list .form-tab-buyer {
+          top: 210px;
+          background-color: #f1f1f1;
+          padding: 60px 50px; } }
+      @media (max-width: 640px) {
+        .form-tab-list .form-tab-seller, .form-tab-list .form-tab-buyer {
+          padding: 30px 35px; } }
+      @media (max-width: 480px) {
+        .form-tab-list .form-tab-seller, .form-tab-list .form-tab-buyer {
+          top: 152px; } }
+      @media (max-width: 410px) {
+        .form-tab-list .form-tab-seller, .form-tab-list .form-tab-buyer {
+          top: 130px; } }
+      @media (max-width: 375px) {
+        .form-tab-list .form-tab-seller, .form-tab-list .form-tab-buyer {
+          top: 118px;
+          padding: 25px 20px; } }
+      .form-tab-list .form-tab-seller.active, .form-tab-list .form-tab-buyer.active {
+        opacity: 1;
+        z-index: 1; }
+      .form-tab-list .form-tab-seller h4, .form-tab-list .form-tab-buyer h4 {
+        font-size: 3rem;
+        font-family: 'DBHelvethaicaX-Reg';
+        font-weight: 600;
+        color: #1b1464; }
+        @media (max-width: 768px) {
+          .form-tab-list .form-tab-seller h4, .form-tab-list .form-tab-buyer h4 {
+            font-size: 6rem;
+            margin-bottom: 25px;
+            line-height: 1; } }
+        @media (max-width: 640px) {
+          .form-tab-list .form-tab-seller h4, .form-tab-list .form-tab-buyer h4 {
+            font-size: 5rem;
+            margin-bottom: 20px; } }
+        @media (max-width: 480px) {
+          .form-tab-list .form-tab-seller h4, .form-tab-list .form-tab-buyer h4 {
+            font-size: 3.8rem; } }
+        @media (max-width: 410px) {
+          .form-tab-list .form-tab-seller h4, .form-tab-list .form-tab-buyer h4 {
+            font-size: 2.9rem;
+            margin-bottom: 15px; } }
+      @media (max-width: 768px) {
+        .form-tab-list .form-tab-seller p, .form-tab-list .form-tab-buyer p {
+          margin-bottom: 50px; } }
+      @media (max-width: 640px) {
+        .form-tab-list .form-tab-seller p, .form-tab-list .form-tab-buyer p {
+          margin-bottom: 40px; } }
+      @media (max-width: 480px) {
+        .form-tab-list .form-tab-seller p, .form-tab-list .form-tab-buyer p {
+          margin-bottom: 30px; } }
+      @media (max-width: 320px) {
+        .form-tab-list .form-tab-seller p, .form-tab-list .form-tab-buyer p {
+          margin-bottom: 20px; } }
+      .form-tab-list .form-tab-seller .form-group.warning input, .form-tab-list .form-tab-buyer .form-group.warning input {
+        border-bottom-color: #f33512; }
+        .form-tab-list .form-tab-seller .form-group.warning input::-webkit-input-placeholder, .form-tab-list .form-tab-buyer .form-group.warning input::-webkit-input-placeholder {
+          color: #f33512;
+          font-style: italic; }
+        .form-tab-list .form-tab-seller .form-group.warning input:-ms-input-placeholder, .form-tab-list .form-tab-buyer .form-group.warning input:-ms-input-placeholder {
+          color: #f33512;
+          font-style: italic; }
+        .form-tab-list .form-tab-seller .form-group.warning input::-ms-input-placeholder, .form-tab-list .form-tab-buyer .form-group.warning input::-ms-input-placeholder {
+          color: #f33512;
+          font-style: italic; }
+        .form-tab-list .form-tab-seller .form-group.warning input::placeholder, .form-tab-list .form-tab-buyer .form-group.warning input::placeholder {
+          color: #f33512;
+          font-style: italic; }
+      .form-tab-list .form-tab-seller input, .form-tab-list .form-tab-buyer input {
+        width: 100%;
+        background-color: #fff;
+        border: 0;
+        border-bottom: solid 1px #1b1464;
+        padding: 5px 10px;
+        outline: none;
+        font-size: 1.8rem; }
+        .form-tab-list .form-tab-seller input::-webkit-input-placeholder, .form-tab-list .form-tab-buyer input::-webkit-input-placeholder {
+          color: #7d7d7d;
+          font-style: italic; }
+        .form-tab-list .form-tab-seller input:-ms-input-placeholder, .form-tab-list .form-tab-buyer input:-ms-input-placeholder {
+          color: #7d7d7d;
+          font-style: italic; }
+        .form-tab-list .form-tab-seller input::-ms-input-placeholder, .form-tab-list .form-tab-buyer input::-ms-input-placeholder {
+          color: #7d7d7d;
+          font-style: italic; }
+        .form-tab-list .form-tab-seller input::placeholder, .form-tab-list .form-tab-buyer input::placeholder {
+          color: #7d7d7d;
+          font-style: italic; }
+        @media (max-width: 768px) {
+          .form-tab-list .form-tab-seller input, .form-tab-list .form-tab-buyer input {
+            border-bottom: solid 3px #1b1464;
+            font-size: 4.9rem;
+            margin-bottom: 45px;
+            padding: 15px; } }
+        @media (max-width: 640px) {
+          .form-tab-list .form-tab-seller input, .form-tab-list .form-tab-buyer input {
+            font-size: 3.7rem;
+            margin-bottom: 40px; } }
+        @media (max-width: 480px) {
+          .form-tab-list .form-tab-seller input, .form-tab-list .form-tab-buyer input {
+            font-size: 2.8rem;
+            margin-bottom: 30px; } }
+        @media (max-width: 410px) {
+          .form-tab-list .form-tab-seller input, .form-tab-list .form-tab-buyer input {
+            font-size: 2.2rem;
+            margin-bottom: 15px;
+            padding: 12px; } }
+        @media (max-width: 375px) {
+          .form-tab-list .form-tab-seller input, .form-tab-list .form-tab-buyer input {
+            padding: 10px 12px; } }
+        @media (max-width: 375px) {
+          .form-tab-list .form-tab-seller input, .form-tab-list .form-tab-buyer input {
+            padding: 10px;
+            font-size: 2rem; } }
+      .form-tab-list .form-tab-seller select, .form-tab-list .form-tab-buyer select {
+        position: relative;
+        width: 100%;
+        padding: 5px 10px;
+        font-size: 1.8rem;
+        background-color: #fff;
+        border: 0;
+        border-bottom: solid 1px #1b1464;
+        margin-bottom: 5px;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        border-radius: 0;
+        color: #7d7d7d;
+        font-style: italic;
+        background-image: url("/assets/img/ico-dropdown.png");
+        background-repeat: no-repeat;
+        background-position: 95% 50%;
+        background-size: 10px auto; }
+        @media (max-width: 768px) {
+          .form-tab-list .form-tab-seller select, .form-tab-list .form-tab-buyer select {
+            border-bottom: solid 3px #1b1464;
+            font-size: 4.9rem;
+            margin-bottom: 45px;
+            background-size: 20px auto; } }
+        @media (max-width: 640px) {
+          .form-tab-list .form-tab-seller select, .form-tab-list .form-tab-buyer select {
+            background-size: 15px auto;
+            font-size: 3.7rem;
+            margin-bottom: 40px; } }
+        @media (max-width: 480px) {
+          .form-tab-list .form-tab-seller select, .form-tab-list .form-tab-buyer select {
+            font-size: 2.8rem;
+            margin-bottom: 30px; } }
+        .form-tab-list .form-tab-seller select option, .form-tab-list .form-tab-buyer select option {
+          color: #464646; }
+        .form-tab-list .form-tab-seller select:not(:checked), .form-tab-list .form-tab-buyer select:not(:checked) {
+          color: #7d7d7d; }
+      .form-tab-list .form-tab-seller strong, .form-tab-list .form-tab-buyer strong {
+        font-family: 'DBHelvethaicaX-Med'; }
+      .form-tab-list .form-tab-seller a, .form-tab-list .form-tab-buyer a {
+        font-family: 'DBHelvethaicaX-Med';
+        color: #1b1464; }
+      .form-tab-list .form-tab-seller .btn, .form-tab-list .form-tab-buyer .btn {
+        display: block;
+        text-align: center; }
+        .form-tab-list .form-tab-seller .btn a, .form-tab-list .form-tab-buyer .btn a {
+          font-size: 2.4rem;
+          padding: 4px 35px;
+          border-radius: 25px;
+          background-color: #fff;
+          border: 1px solid #1b1464;
+          display: inline-block;
+          margin-top: 10px; }
+          @media (max-width: 1280px) {
+            .form-tab-list .form-tab-seller .btn a, .form-tab-list .form-tab-buyer .btn a {
+              font-size: 2.2rem; } }
+          @media (max-width: 768px) {
+            .form-tab-list .form-tab-seller .btn a, .form-tab-list .form-tab-buyer .btn a {
+              font-size: 4.5rem;
+              padding: 3px 60px;
+              border-radius: 100px; } }
+          @media (max-width: 640px) {
+            .form-tab-list .form-tab-seller .btn a, .form-tab-list .form-tab-buyer .btn a {
+              font-size: 3.7rem; } }
+          @media (max-width: 480px) {
+            .form-tab-list .form-tab-seller .btn a, .form-tab-list .form-tab-buyer .btn a {
+              padding: 3px 50px;
+              font-size: 2.8rem; } }
+          @media (max-width: 410px) {
+            .form-tab-list .form-tab-seller .btn a, .form-tab-list .form-tab-buyer .btn a {
+              padding: 5px 40px;
+              font-size: 2.2rem; } }
+    .form-tab-list ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0; }
+      .form-tab-list ul li {
+        position: relative;
+        text-align: center;
+        width: 50%;
+        display: inline-block;
+        float: left;
+        background: #5b568e;
+        background: -webkit-gradient(linear, left top, left bottom, from(#5b568e), color-stop(95%, #45416b));
+        background: -webkit-linear-gradient(top, #5b568e 0%, #45416b 95%);
+        background: -o-linear-gradient(top, #5b568e 0%, #45416b 95%);
+        background: linear-gradient(180deg, #5b568e 0%, #45416b 95%); }
+        .form-tab-list ul li a {
+          font-family: 'DBHelvethaicaX-Med';
+          display: block;
+          color: #fff;
+          padding: 12px 0;
+          font-size: 2.6rem; }
+          @media (max-width: 768px) {
+            .form-tab-list ul li a {
+              font-size: 5rem;
+              padding: 25px 0; } }
+          @media (max-width: 640px) {
+            .form-tab-list ul li a {
+              font-size: 4.2rem; } }
+          @media (max-width: 480px) {
+            .form-tab-list ul li a {
+              font-size: 3.2rem;
+              padding: 20px 0; } }
+          @media (max-width: 410px) {
+            .form-tab-list ul li a {
+              font-size: 2.5rem;
+              padding: 20px 0; } }
+        .form-tab-list ul li.active {
+          background: rgba(255, 255, 255, 0.9); }
+          @media (max-width: 768px) {
+            .form-tab-list ul li.active {
+              background-color: #f1f1f1; } }
+          .form-tab-list ul li.active::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0px;
+            width: 0;
+            height: 0;
+            border-left: 8px solid transparent;
+            border-right: 8px solid transparent;
+            border-top: 8px solid #06080d;
+            left: 50%;
+            -webkit-transform: translateX(-50%);
+            -ms-transform: translateX(-50%);
+            transform: translateX(-50%); }
+            @media (max-width: 768px) {
+              .form-tab-list ul li.active::before {
+                border-left: 14px solid transparent;
+                border-right: 14px solid transparent;
+                border-top: 14px solid #06080d; } }
+          .form-tab-list ul li.active.warning {
+            background-color: #fff; }
+          .form-tab-list ul li.active a {
+            color: #1b1464; }
