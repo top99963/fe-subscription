@@ -76,18 +76,13 @@ class Login extends React.Component {
                                         © 2019 Renewables Accel . All Rights Reserved.
           </li>
                                     <li>
-                                        <a href>
+                                        <a href='terms_of_use'>
                                             Terms and conditions
             </a>
                                     </li>
                                     <li>
-                                        <a href>
+                                        <a href='privacy_policy'>
                                             Privacy Policy
-            </a>
-                                    </li>
-                                    <li>
-                                        <a href>
-                                            Cookie Policy
             </a>
                                     </li>
                                 </ul>
