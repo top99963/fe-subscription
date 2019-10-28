@@ -65,6 +65,214 @@ class Landing extends React.Component {
                     </div>
                 </div>
 
+                <div className="offer">
+                    <div className="container">
+                        <div className="row">
+                            <div className="col-12 col-md-6">
+                                <img alt="" src="assets/img/offer-notebook.png" />
+                            </div>
+                            <div className="col-12 col-md-6">
+                                <div className="offer-detail">
+                                    <ul>
+                                        <li>
+                                            <div className="img-offer">
+                                                <img alt="" src="assets/img/offer-2-n.png" />
+                                            </div>
+                                            <div className="list-offer">
+                                                <p style={{ fontWeight: "bold" }}>One-stop shop</p>
+                                                <p>
+                                                    End-to-end simple process from registration, sourcing, tracking and reporting your progress on renewable energy to relevant stakeholders
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div className="img-offer">
+                                                <img alt="" src="assets/img/offer-1-n.png" />
+                                            </div>
+                                            <div className="list-offer">
+                                                <p style={{ fontWeight: "bold" }}>Compliance with standard</p>
+                                                <p>
+                                                    Fully compliance with the internationally accepted certification standard e.g. I-REC
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div className="img-offer">
+                                                <img alt="" src="assets/img/offer-3-n.png" />
+                                            </div>
+                                            <div className="list-offer">
+                                                <p style={{ fontWeight: "bold" }}>More solutions to mix/match</p>
+                                                <p>
+                                                    More renewable energy solutions with impact details for you to mix/match for an optimal achievement of your renewable energy target
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div className="img-offer">
+                                                <img alt="" src="assets/img/offer-4-n.png" />
+                                            </div>
+                                            <div className="list-offer">
+                                                <p style={{ fontWeight: "bold" }}>Powerful tracking tools</p>
+                                                <p>
+                                                    Fully automated state-of-the-art blockchain solutions for saving your time and resources
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div className="img-offer">
+                                                <img alt="" src="assets/img/offer-5-n.png" />
+                                            </div>
+                                            <div className="list-offer">
+                                                <p style={{ fontWeight: "bold" }}>
+                                                    No double counting
+                                                </p>
+                                                <p>Working closely with local and international registries and standards, our technology helps avoid double counting of renewable energy assets.</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div className="news">
+                    <div className="container">
+                        <h2>
+                            News <span><img alt="" src="assets/img/ico-slash.png" /></span> Events
+                        </h2>
+                        <div className="news-list">
+                            <div className="row row justify-content-center">
+                                <div className="col-12 col-xl-10">
+                                    <ul>
+                                        <li className>
+                                            <div>
+                                                <a target="_blank" href="https://finance.yahoo.com/news/thailand-national-utility-launches-ethereum-145600093.html">
+                                                    <div className="news-img">
+                                                        <img alt="" src="dump/news-im.jpg" />
+                                                    </div>
+                                                    <div className="news-desc">
+                                                        <h3>
+                                                            Thailand’s national utility launches Ethereum-based renewable energy platform
+                                                        </h3>
+                                                        <p>
+                                                            Thailand’s state-owned energy company, PTT, has partnered with the nonprofit Energy Web Foundation to create a new blockchain-based renewable energy system.
+                                                        </p>
+                                                        <span className="meta">
+                                                            15 September 2019
+                                                        </span>
+                                                    </div>
+                                                    <div className="news-more">
+                                                        <h3>
+                                                            Thailand’s national utility launches Ethereum-based renewable energy platform
+                                                        </h3>
+                                                        <p>Thailand’s state-owned energy company, PTT, has partnered with the nonprofit Energy Web Foundation to create a new blockchain-based renewable energy system.</p>
+                                                        <p>Their goal is to develop a regional energy solution that’s compliant with the International Renewable Energy Certificates Standard (I-REC), which provides certificates to companies verifying that their green energy is legitimate and derived from a reliable and sustainable source.</p>
+                                                        <span className="meta">
+                                                            15 September 2019
+                                                        </span>
+                                                    </div>
+                                                </a></div><a href="https://finance.yahoo.com/news/thailand-national-utility-launches-ethereum-145600093.html">
+                                            </a>
+                                        </li>
+                                        <li className>
+                                            <div>
+                                                <a href="https://www.energyweb.org/2019/09/11/ptt-and-energy-web-foundation-launch-blockchain-based-renewables-platform-for-thailand-asean-japan/">
+                                                    <div className="news-img">
+                                                        <img alt="" src="dump/news-im-2.jpg" />
+                                                    </div>
+                                                    <div className="news-desc">
+                                                        <h3>
+                                                            PTT and Energy Web Foundation Launch Blockchain-based Renewables Platform for Thailand, ASEAN, Japan</h3>
+                                                        <p>
+                                                            New tool will support corporate renewable purchases in the region, with fully commercial application expected by May 2020
+                                                        </p>
+                                                        <span className="meta">
+                                                            11 September 2019
+                                                        </span>
+                                                    </div>
+                                                    <div className="news-more">
+                                                        <h3>
+                                                            PTT and Energy Web Foundation Launch Blockchain-based Renewables Platform for Thailand, ASEAN, Japan
+                                                        </h3>
+                                                        <p>
+                                                            New tool will support corporate renewable purchases in the region, with fully commercial application expected by May 2020
+                                                        </p>
+                                                        <p>
+                                                            Bangkok, Thailand, and Zug, Switzerland — September 11, 2019 — Today, Thailand-based multinational energy conglomerate PTT and global energy blockchain nonprofit Energy Web Foundation (EWF) jointly announced the development of a new blockchain-based renewables platform.
+                                                        </p>
+                                                        <span className="meta">
+                                                            11 September 2019
+                                                        </span>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </li>
+                                        <li className>
+                                            <div>
+                                                <a target="_blank" href="https://www.ledgerinsights.com/ptt-blockchain-renewable-energy-marketplace-rec-ewf/">
+                                                    <div className="news-img">
+                                                        <img alt="" src="dump/stock-photo-photovoltaic-panels-for-renewable-electric-production-navarra-aragon-spain-500035789.jpg" />
+                                                    </div>
+                                                    <div className="news-desc">
+                                                        <h3>
+                                                            PTT to launch blockchain renewable energy marketplace
+                                                        </h3>
+                                                        <p>
+                                                            Today state-owned Thai energy conglomerate PTT announced plans to develop a blockchain-based renewables marketplace in collaboration with Energy Web Foundation (EWF)
+                                                        </p>
+                                                        <span className="meta">
+                                                            09 August 2019
+                                                        </span>
+                                                    </div>
+                                                    <div className="news-more">
+                                                        <h3>
+                                                            PTT to launch blockchain renewable energy marketplace
+                                                        </h3>
+                                                        <p>
+                                                            Today state-owned Thai energy conglomerate PTT announced plans to develop a blockchain-based renewables marketplace in collaboration with Energy Web Foundation (EWF), an energy blockchain nonprofit. The launch of the full PTT Renewables Marketplace Platform is set for May 2020.
+                                                        </p>
+                                                        <span className="meta">
+                                                            09 August 2019
+                                                        </span>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="btn">
+                            <a href="/#">
+                                More news
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div className="founding-member">
+                    <div className="container">
+                        <h2>
+                            Partners
+                        </h2>
+                        <ul className="mem-1">
+                            <li>
+                                <img alt="" className="d-none d-none d-md-inline" src="assets/img/founder-member.png" />
+                                <img alt="" className="d-md-none" src="assets/img/founder-member-m.png" />
+                            </li>
+                        </ul>
+                        <div>
+                            <h4>
+                                Do you want to become a <strong>Renewables Accel</strong> member?
+                            </h4>
+                            <a className="btn" href='/#'>
+                                Subscribe Now
+                            </a>
+                        </div>
+                    </div>
+                </div>
                 <Footer />
             </div>
         )
