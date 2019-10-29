@@ -1,0 +1,125 @@
+  
+  .page-terms {
+    font-size: 2rem;
+    color: #252525;
+    background-color: #f7f7f7;
+    padding-top: 60px; }
+    @media (max-width: 320px) {
+      .page-terms {
+        padding-top: 50px; } }
+    .page-terms .hero-image {
+      color: #fff;
+      text-align: center;
+      height: 400px;
+      background-image: url("/assets/img/hero-terms.jpg");
+      background-size: cover;
+      background-position: center center; }
+      @media (max-width: 768px) {
+        .page-terms .hero-image {
+          height: 360px; } }
+      @media (max-width: 480px) {
+        .page-terms .hero-image {
+          height: 225px; } }
+      @media (max-width: 410px) {
+        .page-terms .hero-image {
+          height: 175px; } }
+      .page-terms .hero-image h1 {
+        padding-top: 140px;
+        font-size: 9rem;
+        text-shadow: 0 2px 5px #252525; }
+        @media (max-width: 768px) {
+          .page-terms .hero-image h1 {
+            font-family: 'DB Helvethaica X 63 MedExt';
+            font-size: 10.5rem;
+            padding-top: 100px; } }
+        @media (max-width: 640px) {
+          .page-terms .hero-image h1 {
+            font-size: 9.5rem; } }
+        @media (max-width: 480px) {
+          .page-terms .hero-image h1 {
+            font-size: 6.5rem;
+            padding-top: 50px; } }
+        @media (max-width: 410px) {
+          .page-terms .hero-image h1 {
+            font-size: 5.5rem;
+            padding-top: 30px; } }
+      .page-terms .hero-image span {
+        font-size: 25px; }
+        @media (max-width: 480px) {
+          .page-terms .hero-image span {
+            font-size: 20px; } }
+        @media (max-width: 410px) {
+          .page-terms .hero-image span {
+            font-size: 17px; } }
+    .page-terms .terms-wrap {
+      padding: 55px 0 100px;
+      font-size: 2.2rem; }
+      @media (max-width: 768px) {
+        .page-terms .terms-wrap {
+          font-size: 4.5rem;
+          padding: 55px 0 35px; } }
+      @media (max-width: 480px) {
+        .page-terms .terms-wrap {
+          font-size: 2.8rem;
+          padding: 40px 0 25px; } }
+      @media (max-width: 410px) {
+        .page-terms .terms-wrap {
+          font-size: 2.2rem;
+          padding: 30px 0 15px; } }
+      .page-terms .terms-wrap h2 {
+        font-size: 2.7rem;
+        font-family: 'DBHelvethaicaX-Med'; }
+        @media (max-width: 768px) {
+          .page-terms .terms-wrap h2 {
+            font-size: 3.3rem; } }
+        @media (max-width: 480px) {
+          .page-terms .terms-wrap h2 {
+            font-size: 2.8rem;
+            line-height: 1;
+            margin-bottom: 10px; } }
+        @media (max-width: 410px) {
+          .page-terms .terms-wrap h2 {
+            font-size: 3.1rem; } }
+      .page-terms .terms-wrap .title-terms {
+        color: #595959;
+        font-size: 22px; }
+        @media (max-width: 640px) {
+          .page-terms .terms-wrap .title-terms {
+            font-size: 20px; } }
+        @media (max-width: 480px) {
+          .page-terms .terms-wrap .title-terms {
+            font-size: 18px; } }
+        @media (max-width: 410px) {
+          .page-terms .terms-wrap .title-terms {
+            font-size: 16px; } }
+        .page-terms .terms-wrap .title-terms p {
+          padding-bottom: 20px; }
+      .page-terms .terms-wrap .terms-detail h2 {
+        color: #252525;
+        padding-bottom: 5px; }
+      .page-terms .terms-wrap .terms-detail p {
+        color: #595959;
+        font-size: 20px;
+        margin: 0;
+        padding-bottom: 30px; }
+        @media (max-width: 640px) {
+          .page-terms .terms-wrap .terms-detail p {
+            font-size: 18px;
+            padding-bottom: 25px; } }
+        @media (max-width: 480px) {
+          .page-terms .terms-wrap .terms-detail p {
+            font-size: 16px; } }
+      .page-terms .terms-wrap .terms-detail ul {
+        margin-top: -25px;
+        padding-left: 18px;
+        padding-bottom: 20px; }
+        .page-terms .terms-wrap .terms-detail ul li {
+          color: #595959;
+          font-size: 20px; }
+          @media (max-width: 640px) {
+            .page-terms .terms-wrap .terms-detail ul li {
+              font-size: 18px; } }
+          @media (max-width: 480px) {
+            .page-terms .terms-wrap .terms-detail ul li {
+              font-size: 16px; } }
+  

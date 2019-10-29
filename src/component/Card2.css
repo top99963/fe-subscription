@@ -1,0 +1,161 @@
+ a:hover .news-more {
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+    opacity: 1; }
+   .news-img {
+    max-height: 200px;
+    overflow: hidden; }
+    @media (max-width: 1280px) {
+       .news-img {
+        max-height: 180px; } }
+    @media (max-width: 1024px) {
+       .news-img {
+        max-height: 130px; } }
+    @media (max-width: 768px) {
+       .news-img {
+        max-height: 430px; } }
+    @media (max-width: 640px) {
+       .news-img {
+        max-height: 350px; } }
+    @media (max-width: 480px) {
+       .news-img {
+        max-height: 270px; } }
+     .news-img img {
+      min-height: 200px; }
+      @media (max-width: 1280px) {
+         .news-img img {
+          min-height: 180px; } }
+      @media (max-width: 1024px) {
+         .news-img img {
+          min-height: 130px; } }
+      @media (max-width: 768px) {
+         .news-img img {
+          min-height: 0; } }
+   .news-desc {
+    font-family: 'DBHelvethaicaX-Reg';
+    padding: 20px 15px 30px;
+    font-size: 2rem;
+    min-height: 280px;
+    overflow: hidden;
+    color: #707070; }
+    @media (max-width: 1280px) {
+       .news-desc {
+        font-size: 1.9rem; } }
+    @media (max-width: 1024px) {
+       .news-desc {
+        font-size: 1.8rem; } }
+    @media (max-width: 768px) {
+       .news-desc {
+        font-size: 3.9rem;
+        padding: 50px 40px; } }
+    @media (max-width: 640px) {
+       .news-desc {
+        padding: 40px 30px;
+        font-size: 3.3rem; } }
+    @media (max-width: 480px) {
+       .news-desc {
+        font-size: 2.4rem;
+        padding: 25px; } }
+    @media (max-width: 410px) {
+       .news-desc {
+        font-size: 1.9rem;
+        padding: 20px 15px; } }
+     .news-desc h3 {
+      font-family: 'DBHelvethaicaX-Reg';
+      font-weight: 600;
+      font-size: 2.8rem;
+      line-height: .9;
+      margin-bottom: 20px;
+      color: #252525; }
+      @media (max-width: 1280px) {
+         .news-desc h3 {
+          font-size: 2.4rem; } }
+      @media (max-width: 1024px) {
+         .news-desc h3 {
+          font-size: 2rem; } }
+      @media (max-width: 768px) {
+         .news-desc h3 {
+          font-size: 4.5rem;
+          margin-bottom: 28px; } }
+      @media (max-width: 640px) {
+         .news-desc h3 {
+          font-size: 3.7rem; } }
+      @media (max-width: 480px) {
+         .news-desc h3 {
+          font-size: 2.8rem; } }
+      @media (max-width: 410px) {
+         .news-desc h3 {
+          font-size: 2.2rem; } }
+     .news-desc p {
+      margin-bottom: 15px; }
+      @media (max-width: 768px) {
+         .news-desc p {
+          margin-bottom: 28px; } }
+      @media (max-width: 640px) {
+         .news-desc p {
+          margin-bottom: 20px; } }
+     .news-desc .meta {
+      display: block;
+      color: #1b1464; }
+   .news-more {
+    font-family: 'DBHelvethaicaX-Reg';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(27, 20, 100, 0.95);
+    color: #fff;
+    padding: 15px;
+    font-size: 2rem;
+    opacity: 0;
+    overflow: hidden;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s; }
+    @media (max-width: 1280px) {
+       .news-more {
+        font-size: 1.7rem; } }
+    @media (max-width: 1024px) {
+       .news-more {
+        font-size: 1.6rem; } }
+    @media (max-width: 768px) {
+       .news-more {
+        display: none; } }
+     .news-more h3 {
+      position: relative;
+      font-family: 'DBHelvethaicaX-Reg';
+      font-weight: 600;
+      font-size: 2.8rem;
+      line-height: .9;
+      margin-bottom: 20px; }
+      @media (max-width: 1280px) {
+         .news-more h3 {
+          font-size: 2.4rem; } }
+      @media (max-width: 1024px) {
+         .news-more h3 {
+          font-size: 2rem; } }
+       .news-more h3::after {
+        content: '';
+        display: block;
+        width: 80px;
+        height: 5px;
+        background-color: #fff;
+        margin: 20px 0 40px; }
+        @media (max-width: 1280px) {
+           .news-more h3::after {
+            margin: 20px 0 30px; } }
+        @media (max-width: 1024px) {
+           .news-more h3::after {
+            height: 3px;
+            margin: 10px 0 20px; } }
+     .news-more p {
+      margin-bottom: 15px; }
+      @media (max-width: 1024px) {
+         .news-more p {
+          margin-bottom: 10px; } }
+     .news-more .meta {
+      display: block; }

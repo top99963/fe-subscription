@@ -3,9 +3,34 @@ import NavBar from '../component/NavBar'
 import Footer from '../component/Footer'
 import SlideBar from '../component/SlideBar'
 import Card from '../component/Card'
+import Card2 from '../component/Card2'
 import './Landing.css'
 
+import { animateScroll as scroll } from 'react-scroll'
+
+
 class Landing extends React.Component {
+
+    updateScroll() {
+        const id = window.location.hash.substr(1);
+        if (id === 'news') {
+            scroll.scrollTo(2690)
+        } else if (id === 'about') {
+            scroll.scrollTo(742)
+        } else if (id === 'partners') {
+            scroll.scrollTo(3400)
+        }
+    }
+
+    componentDidMount() {
+        this.updateScroll()
+
+    }
+
+    componentDidUpdate() {
+        this.updateScroll()
+    }
+
     render() {
         return (
             <div>
@@ -146,100 +171,30 @@ class Landing extends React.Component {
                             <div className="row row justify-content-center">
                                 <div className="col-12 col-xl-10">
                                     <ul>
-                                        <li className>
-                                            <div>
-                                                <a target="_blank" href="https://finance.yahoo.com/news/thailand-national-utility-launches-ethereum-145600093.html">
-                                                    <div className="news-img">
-                                                        <img alt="" src="dump/news-im.jpg" />
-                                                    </div>
-                                                    <div className="news-desc">
-                                                        <h3>
-                                                            Thailand’s national utility launches Ethereum-based renewable energy platform
-                                                        </h3>
-                                                        <p>
-                                                            Thailand’s state-owned energy company, PTT, has partnered with the nonprofit Energy Web Foundation to create a new blockchain-based renewable energy system.
-                                                        </p>
-                                                        <span className="meta">
-                                                            15 September 2019
-                                                        </span>
-                                                    </div>
-                                                    <div className="news-more">
-                                                        <h3>
-                                                            Thailand’s national utility launches Ethereum-based renewable energy platform
-                                                        </h3>
-                                                        <p>Thailand’s state-owned energy company, PTT, has partnered with the nonprofit Energy Web Foundation to create a new blockchain-based renewable energy system.</p>
-                                                        <p>Their goal is to develop a regional energy solution that’s compliant with the International Renewable Energy Certificates Standard (I-REC), which provides certificates to companies verifying that their green energy is legitimate and derived from a reliable and sustainable source.</p>
-                                                        <span className="meta">
-                                                            15 September 2019
-                                                        </span>
-                                                    </div>
-                                                </a></div><a href="https://finance.yahoo.com/news/thailand-national-utility-launches-ethereum-145600093.html">
-                                            </a>
-                                        </li>
-                                        <li className>
-                                            <div>
-                                                <a href="https://www.energyweb.org/2019/09/11/ptt-and-energy-web-foundation-launch-blockchain-based-renewables-platform-for-thailand-asean-japan/">
-                                                    <div className="news-img">
-                                                        <img alt="" src="dump/news-im-2.jpg" />
-                                                    </div>
-                                                    <div className="news-desc">
-                                                        <h3>
-                                                            PTT and Energy Web Foundation Launch Blockchain-based Renewables Platform for Thailand, ASEAN, Japan</h3>
-                                                        <p>
-                                                            New tool will support corporate renewable purchases in the region, with fully commercial application expected by May 2020
-                                                        </p>
-                                                        <span className="meta">
-                                                            11 September 2019
-                                                        </span>
-                                                    </div>
-                                                    <div className="news-more">
-                                                        <h3>
-                                                            PTT and Energy Web Foundation Launch Blockchain-based Renewables Platform for Thailand, ASEAN, Japan
-                                                        </h3>
-                                                        <p>
-                                                            New tool will support corporate renewable purchases in the region, with fully commercial application expected by May 2020
-                                                        </p>
-                                                        <p>
-                                                            Bangkok, Thailand, and Zug, Switzerland — September 11, 2019 — Today, Thailand-based multinational energy conglomerate PTT and global energy blockchain nonprofit Energy Web Foundation (EWF) jointly announced the development of a new blockchain-based renewables platform.
-                                                        </p>
-                                                        <span className="meta">
-                                                            11 September 2019
-                                                        </span>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                        </li>
-                                        <li className>
-                                            <div>
-                                                <a target="_blank" href="https://www.ledgerinsights.com/ptt-blockchain-renewable-energy-marketplace-rec-ewf/">
-                                                    <div className="news-img">
-                                                        <img alt="" src="dump/stock-photo-photovoltaic-panels-for-renewable-electric-production-navarra-aragon-spain-500035789.jpg" />
-                                                    </div>
-                                                    <div className="news-desc">
-                                                        <h3>
-                                                            PTT to launch blockchain renewable energy marketplace
-                                                        </h3>
-                                                        <p>
-                                                            Today state-owned Thai energy conglomerate PTT announced plans to develop a blockchain-based renewables marketplace in collaboration with Energy Web Foundation (EWF)
-                                                        </p>
-                                                        <span className="meta">
-                                                            09 August 2019
-                                                        </span>
-                                                    </div>
-                                                    <div className="news-more">
-                                                        <h3>
-                                                            PTT to launch blockchain renewable energy marketplace
-                                                        </h3>
-                                                        <p>
-                                                            Today state-owned Thai energy conglomerate PTT announced plans to develop a blockchain-based renewables marketplace in collaboration with Energy Web Foundation (EWF), an energy blockchain nonprofit. The launch of the full PTT Renewables Marketplace Platform is set for May 2020.
-                                                        </p>
-                                                        <span className="meta">
-                                                            09 August 2019
-                                                        </span>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                        </li>
+                                        <Card2
+                                            img='dump/news-im.jpg'
+                                            title='Thailand’s national utility launches Ethereum-based renewable energy platform'
+                                            detail='Thailand’s state-owned energy company, PTT, has partnered with the nonprofit Energy Web Foundation to create a new blockchain-based renewable energy system.'
+                                            detail2='Their goal is to develop a regional energy solution that’s compliant with the International Renewable Energy Certificates Standard (I-REC), which provides certificates to companies verifying that their green energy is legitimate and derived from a reliable and sustainable source.'
+                                            date='15 September 2019'
+                                            link='https://finance.yahoo.com/news/thailand-national-utility-launches-ethereum-145600093.html'
+                                        />
+                                        <Card2
+                                            img='dump/news-im-2.jpg'
+                                            title='PTT and Energy Web Foundation Launch Blockchain-based Renewables Platform for Thailand, ASEAN, Japan'
+                                            detail='New tool will support corporate renewable purchases in the region, with fully commercial application expected by May 2020'
+                                            detail2='Bangkok, Thailand, and Zug, Switzerland — September 11, 2019 — Today, Thailand-based multinational energy conglomerate PTT and global energy blockchain nonprofit Energy Web Foundation (EWF) jointly announced the development of a new blockchain-based renewables platform.'
+                                            date='11 September 2019'
+                                            link='https://www.energyweb.org/2019/09/11/ptt-and-energy-web-foundation-launch-blockchain-based-renewables-platform-for-thailand-asean-japan/'
+                                        />
+                                        <Card2
+                                            img='dump/stock-photo-photovoltaic-panels-for-renewable-electric-production-navarra-aragon-spain-500035789.jpg'
+                                            title='PTT to launch blockchain renewable energy marketplace'
+                                            detail='Today state-owned Thai energy conglomerate PTT announced plans to develop a blockchain-based renewables marketplace in collaboration with Energy Web Foundation (EWF)'
+                                            detail2='An energy blockchain nonprofit. The launch of the full PTT Renewables Marketplace Platform is set for May 2020.'
+                                            date='09 August 2019'
+                                            link='https://www.ledgerinsights.com/ptt-blockchain-renewable-energy-marketplace-rec-ewf/'
+                                        />
                                     </ul>
                                 </div>
                             </div>

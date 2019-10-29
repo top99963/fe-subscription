@@ -1,6 +1,7 @@
 import React from 'react'
 import axios from 'axios'
 import config from '../config'
+import ModalRegistor from './ModalRegistor'
 import './SubscriptionTab.css'
 
 const { baseUrl } = config
@@ -11,7 +12,7 @@ const initState = {
     company: '',
     contactNumber: '',
     isValidEmail: true,
-    isOpenModal: false
+    isModalOpen: false
 }
 
 class SubscriptionTab extends React.Component {
@@ -23,7 +24,7 @@ class SubscriptionTab extends React.Component {
         this.handleChange = this.handleChange.bind(this)
         this.handleSubmit = this.handleSubmit.bind(this)
         this.handleDropDownChange = this.handleDropDownChange.bind(this)
-        this.handleOpenModal = props.handleOpenModal
+        this.fuck = this.fuck.bind(this)
     }
 
 
@@ -59,7 +60,7 @@ class SubscriptionTab extends React.Component {
     }
 
     validateEmail(email) {
-        var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+        var re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
         return re.test(String(email).toLowerCase());
     }
 
@@ -80,7 +81,7 @@ class SubscriptionTab extends React.Component {
         this.setState(prevState => ({
             ...initState,
             type: prevState.type,
-            isOpenModal: true
+            isModalOpen: true
         }))
     }
 
@@ -123,10 +124,14 @@ class SubscriptionTab extends React.Component {
                     the <a href='terms_of_use'>Terms of Use</a> and <a href='privacy_policy'>Privacy Policy.</a>
                 </p>
                 <div className="btn">
-                    <a href="#" style={!this.state.isValidEmail ? { opacity: 0.7 } : {}} onClick={this.handleSubmit}>Submit</a>
+                    <a href="/#" style={!this.state.isValidEmail ? { opacity: 0.7 } : {}} onClick={this.handleSubmit}>Submit</a>
                 </div>
             </div>
         )
+    }
+
+    fuck() {
+        this.setState({isModalOpen: false})
     }
 
     render() {
@@ -138,10 +143,10 @@ class SubscriptionTab extends React.Component {
                 </div>
                     <ul>
                         <li className={(this.state.type === 'buyer' ? 'active' : '')}>
-                            <a href='#' onClick={this.handleTabBuyer}>Power consumer</a>
+                            <a href='/#' onClick={this.handleTabBuyer}>Power consumer</a>
                         </li>
                         <li className={(this.state.type === 'seller' ? 'active' : '')}>
-                            <a href='#' onClick={this.handleTabSeller}>Power generator</a>
+                            <a href='/#' onClick={this.handleTabSeller}>Power generator</a>
                         </li>
                     </ul>
                     <div className="form-tab">
@@ -157,20 +162,12 @@ class SubscriptionTab extends React.Component {
                         </div>
                     </div>
                 </div>
-                <div id="register-success" className={"modal fade " + (this.state.isOpenModal && 'show')}>
-                    <a href="/#" className="close-modal">
-                        <img alt="" src="assets/img/ico-close.png" />
-                    </a>
-                    <div className="modal-content">
-                        <h2>Thank you for signing up</h2>
-                        <p>We appreciate you contacting us. We will get back to you soonest. <br /><br />
-                        </p>
-                        <a className="btn" href="#" onClick={() => this.setState({ isOpenModal: false })}>
-                            OK
-                        </a>
-                    </div>
-                </div>
-                <div className={"overlay " + (this.state.isOpenModal && "show")} />
+                <ModalRegistor 
+                    active={this.state.isModalOpen}  
+                    handleClick={() => this.setState({ isModalOpen: false })}
+                    title='Thank you for signing up'
+                    detail='We appreciate you contacting us. We will get back to you soonest.'
+                />
             </div>
         )
     }

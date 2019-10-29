@@ -1,4 +1,6 @@
 import React from 'react'
+import FooterCoppyRight from './FooterCopyRight'
+import './Footer.css'
 
 function Footer() {
     return (
@@ -14,27 +16,27 @@ function Footer() {
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#">
+                                    <a href="/#about">
                                         About us
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="/products">
+                                    <a href="products">
                                         Product &amp; Service
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#">
+                                    <a href="/#news">
                                         News
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#">
+                                    <a href="/#partners">
                                         Partners
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="contactUs">
+                                    <a href="contact_us">
                                         Contact us
                                     </a>
                                 </li>
@@ -48,44 +50,26 @@ function Footer() {
                     <span>Follow us:</span>
                     <ul>
                         <li>
-                            <a href="#" target="_blank">
+                            <a href="/#" target="_blank">
                                 <img alt="" src="assets/img/Icon_Social_01.png" />
                             </a>
                         </li>
                         <li>
-                            <a href="#" target="_blank">
+                            <a href="/#" target="_blank">
                                 <img alt="" src="assets/img/Icon_Social_02.png" />
                             </a>
                         </li>
                         <li>
-                            <a href="#" target="_blank">
+                            <a href="/#" target="_blank">
                                 <img alt="" src="assets/img/Icon_Social_03.png" />
                             </a>
                         </li>
                     </ul>
                 </div>
             </div>
-            <div className="footer-copyright">
-                <div className="container">
-                    <ul>
-                        <li>
-                            © 2019 Expresso rep. All Rights Reserved.
-                        </li>
-                        <li>
-                            <a href="terms_of_use">
-                                Terms and conditions
-                        </a>
-                        </li>
-                        <li>
-                            <a href="privacy_policy">
-                                Privacy Policy
-                        </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+            <FooterCoppyRight />
             <div className="btn-totop">
-                <a href="#">
+                <a href="/#">
                     <img alt="" className="d-none d-none d-md-block" src="assets/img/ico-top.png" />
                     <img alt="" className="d-md-none" src="assets/img/ico-top-m.png" />
                 </a>

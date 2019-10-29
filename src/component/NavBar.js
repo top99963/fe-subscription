@@ -15,7 +15,7 @@ function NavBar() {
                         <div className="col-md-7 nav-cover">
                             <ul className="nav-top">
                                 <li>
-                                    <a href="#">
+                                    <a href="/#about">
                                         About us
                             </a>
                                 </li>
@@ -25,17 +25,17 @@ function NavBar() {
                             </a>
                                 </li>
                                 <li>
-                                    <a href="#">
+                                    <a href="/#news">
                                         News
                             </a>
                                 </li>
                                 <li>
-                                    <a href="#">
+                                    <a href="/#partners">
                                         Partners
                             </a>
                                 </li>
                                 <li>
-                                    <a href="contactUs">
+                                    <a href="contact_us">
                                         Contact us
                             </a>
                                 </li>
@@ -58,7 +58,7 @@ function NavBar() {
                         <div className="col-5 col-md-3">
                             <a href="login" className="btn-login">Client login</a>
                             {/*  */}
-                            <a href className="navbar-toggler">
+                            <a href="/#" className="navbar-toggler">
                             </a>
                         </div>
                     </div>

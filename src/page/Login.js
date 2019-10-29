@@ -1,8 +1,9 @@
 import React from 'react'
-import config from './config'
 import axios from 'axios'
+import path from '../path'
+import FooterCoppyRight from '../component/FooterCopyRight'
+import './Login.css'
 
-const { baseUrl } = config
 const initState = {
     username: '',
     password: '',
@@ -25,7 +26,7 @@ class Login extends React.Component {
 
     handleSubmit() {
 
-        axios.post(baseUrl + '/login', this.state)
+        axios.post(path.Login, this.state)
             .then(res => {
                 if (res.data) {
                     window.location.replace('http://www.expresso-origin.pttplc.com:8545')
@@ -33,15 +34,13 @@ class Login extends React.Component {
             })
             .catch(err => {
                 console.log(err)
-                this.setState({errorMsg: 'Username or password incorrect !'})
+                this.setState({ errorMsg: 'Username or password incorrect !' })
             })
     }
 
     render() {
         return (
             <div>
-                <link rel="stylesheet" type="text/css" href="assets/bootstrap/css/bootstrap.css" />
-                <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
                 <div className="page-login">
                     <div className="container">
                         <div className="paper">
@@ -63,31 +62,13 @@ class Login extends React.Component {
                                     <div className="btn">
                                         <a href onClick={this.handleSubmit} style={{ cursor: "pointer" }} >Submit</a>
                                     </div>
-                                    <p style={{color: 'red'}}>{this.state.errorMsg}</p>
+                                    <p style={{ color: 'red' }}>{this.state.errorMsg}</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <footer>
-                        <div className="footer-copyright">
-                            <div className="container">
-                                <ul>
-                                    <li>
-                                        © 2019 Renewables Accel . All Rights Reserved.
-          </li>
-                                    <li>
-                                        <a href='terms_of_use'>
-                                            Terms and conditions
-            </a>
-                                    </li>
-                                    <li>
-                                        <a href='privacy_policy'>
-                                            Privacy Policy
-            </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
+                        <FooterCoppyRight />
                     </footer>
                 </div>
             </div>

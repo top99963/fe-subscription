@@ -1,0 +1,393 @@
+.page-contact {
+    font-size: 2rem;
+    color: #252525;
+    background-color: #f7f7f7;
+    padding-top: 60px; }
+    @media (max-width: 320px) {
+      .page-contact {
+        padding-top: 50px; } }
+    .page-contact .hero-image {
+      color: #fff;
+      text-align: center;
+      height: 400px;
+      background-image: url("/assets/img/contact-hero.jpg");
+      background-size: cover;
+      background-position: center center; }
+      @media (max-width: 768px) {
+        .page-contact .hero-image {
+          height: 360px; } }
+      @media (max-width: 480px) {
+        .page-contact .hero-image {
+          height: 225px; } }
+      @media (max-width: 410px) {
+        .page-contact .hero-image {
+          height: 175px; } }
+      .page-contact .hero-image h1 {
+        padding-top: 140px;
+        font-size: 9rem;
+        text-shadow: 0 2px 5px #252525; }
+        @media (max-width: 768px) {
+          .page-contact .hero-image h1 {
+            font-family: 'DB Helvethaica X 63 MedExt';
+            font-size: 10.5rem;
+            padding-top: 120px; } }
+        @media (max-width: 480px) {
+          .page-contact .hero-image h1 {
+            font-size: 6.5rem;
+            padding-top: 80px; } }
+        @media (max-width: 410px) {
+          .page-contact .hero-image h1 {
+            font-size: 5.1rem; } }
+        @media (max-width: 410px) {
+          .page-contact .hero-image h1 {
+            padding-top: 60px; } }
+    .page-contact .contact-wrap {
+      padding: 55px 0 100px;
+      font-size: 2.2rem; }
+      @media (max-width: 768px) {
+        .page-contact .contact-wrap {
+          font-size: 4.5rem;
+          padding: 55px 0 150px; } }
+      @media (max-width: 480px) {
+        .page-contact .contact-wrap {
+          font-size: 2.8rem;
+          padding: 40px 0 100px; } }
+      @media (max-width: 410px) {
+        .page-contact .contact-wrap {
+          font-size: 2.2rem;
+          padding: 30px 0 100px; } }
+      .page-contact .contact-wrap h2 {
+        font-size: 4.2rem;
+        font-family: 'DBHelvethaicaX-Med';
+        font-weight: 800; }
+        @media (max-width: 768px) {
+          .page-contact .contact-wrap h2 {
+            font-size: 6.3rem;
+            margin-bottom: 15px; } }
+        @media (max-width: 480px) {
+          .page-contact .contact-wrap h2 {
+            font-size: 4rem;
+            line-height: 1;
+            margin-bottom: 10px; } }
+        @media (max-width: 410px) {
+          .page-contact .contact-wrap h2 {
+            font-size: 3.1rem; } }
+      .page-contact .contact-wrap .contact-detail {
+        margin-left: 2.5%; }
+        @media (max-width: 992px) {
+          .page-contact .contact-wrap .contact-detail {
+            margin-left: auto; } }
+        .page-contact .contact-wrap .contact-detail label {
+          display: block;
+          font-family: 'DBHelvethaicaX-Med';
+          color: #1b1464;
+          margin-bottom: 0; }
+          @media (max-width: 768px) {
+            .page-contact .contact-wrap .contact-detail label {
+              margin-bottom: 5px; } }
+        .page-contact .contact-wrap .contact-detail .btn-map {
+          font-size: 2.4rem;
+          padding: 7px 25px 7px 45px;
+          border-radius: 25px;
+          color: #1b1464;
+          border: 1px solid #1b1464;
+          display: inline-block;
+          background-image: url("/assets/img/ico-mappin.png");
+          background-repeat: no-repeat;
+          background-size: 16px auto;
+          background-position: 20px 50%;
+          background-color: #fff;
+          margin-top: 5px; }
+          @media (max-width: 768px) {
+            .page-contact .contact-wrap .contact-detail .btn-map {
+              font-size: 4.5rem;
+              border-radius: 100px;
+              margin-top: 25px;
+              padding: 20px 50px 20px 90px;
+              background-size: auto 40px;
+              background-position: 35px 50%; } }
+          @media (max-width: 480px) {
+            .page-contact .contact-wrap .contact-detail .btn-map {
+              font-size: 2.8rem;
+              background-size: auto 30px;
+              background-position: 20px 50%;
+              border-radius: 50px;
+              padding: 12px 30px 12px 60px;
+              margin-top: 20px; } }
+          @media (max-width: 410px) {
+            .page-contact .contact-wrap .contact-detail .btn-map {
+              margin-top: 15px;
+              font-size: 2.2rem;
+              background-size: auto 25px;
+              padding: 12px 25px 12px 50px; } }
+        .page-contact .contact-wrap .contact-detail .contact-interact {
+          margin-top: 60px;
+          padding-right: 20%; }
+          @media (max-width: 1280px) {
+            .page-contact .contact-wrap .contact-detail .contact-interact {
+              padding-right: 0%;
+              font-size: 2rem; } }
+          @media (max-width: 992px) {
+            .page-contact .contact-wrap .contact-detail .contact-interact {
+              font-size: 1.7rem; } }
+          @media (max-width: 768px) {
+            .page-contact .contact-wrap .contact-detail .contact-interact {
+              font-size: 3.9rem; } }
+          @media (max-width: 480px) {
+            .page-contact .contact-wrap .contact-detail .contact-interact {
+              font-size: 2.8rem;
+              margin-top: 40px; } }
+          @media (max-width: 410px) {
+            .page-contact .contact-wrap .contact-detail .contact-interact {
+              font-size: 2.2rem;
+              margin-top: 30px; } }
+          .page-contact .contact-wrap .contact-detail .contact-interact .btn-mail {
+            position: relative; }
+            @media (max-width: 768px) {
+              .page-contact .contact-wrap .contact-detail .contact-interact .btn-mail {
+                margin-bottom: 40px;
+                display: block; } }
+            @media (max-width: 410px) {
+              .page-contact .contact-wrap .contact-detail .contact-interact .btn-mail {
+                margin-bottom: 20px; } }
+            .page-contact .contact-wrap .contact-detail .contact-interact .btn-mail span {
+              display: inline-block;
+              vertical-align: top;
+              font-family: 'DBHelvethaicaX-Med';
+              line-height: .9; }
+              @media (max-width: 768px) {
+                .page-contact .contact-wrap .contact-detail .contact-interact .btn-mail span {
+                  line-height: 1; } }
+              .page-contact .contact-wrap .contact-detail .contact-interact .btn-mail span span {
+                color: #1b1464; }
+            .page-contact .contact-wrap .contact-detail .contact-interact .btn-mail:before {
+              content: "";
+              width: 40px;
+              height: 40px;
+              display: inline-block;
+              margin-right: 10px;
+              background-color: #fff;
+              background-image: url("/assets/img/ico-mail.png");
+              background-size: 22px auto;
+              background-repeat: no-repeat;
+              background-position: center center;
+              border-radius: 50%;
+              border: 1px solid #1b1464; }
+              @media (max-width: 1280px) {
+                .page-contact .contact-wrap .contact-detail .contact-interact .btn-mail:before {
+                  margin-right: 5px; } }
+              @media (max-width: 992px) {
+                .page-contact .contact-wrap .contact-detail .contact-interact .btn-mail:before {
+                  width: 30px;
+                  height: 30px;
+                  background-size: 15px auto; } }
+              @media (max-width: 768px) {
+                .page-contact .contact-wrap .contact-detail .contact-interact .btn-mail:before {
+                  width: 80px;
+                  height: 80px;
+                  background-size: auto;
+                  margin-right: 10px; } }
+              @media (max-width: 480px) {
+                .page-contact .contact-wrap .contact-detail .contact-interact .btn-mail:before {
+                  width: 50px;
+                  height: 50px;
+                  background-size: 25px auto; } }
+              @media (max-width: 410px) {
+                .page-contact .contact-wrap .contact-detail .contact-interact .btn-mail:before {
+                  width: 40px;
+                  height: 40px;
+                  background-size: 20px auto; } }
+          .page-contact .contact-wrap .contact-detail .contact-interact .btn-call {
+            position: relative; }
+            @media (max-width: 768px) {
+              .page-contact .contact-wrap .contact-detail .contact-interact .btn-call {
+                display: block; } }
+            .page-contact .contact-wrap .contact-detail .contact-interact .btn-call span {
+              display: inline-block;
+              vertical-align: top;
+              font-family: 'DBHelvethaicaX-Med';
+              line-height: .9; }
+              .page-contact .contact-wrap .contact-detail .contact-interact .btn-call span span {
+                color: #1b1464; }
+            .page-contact .contact-wrap .contact-detail .contact-interact .btn-call:before {
+              content: "";
+              width: 40px;
+              height: 40px;
+              display: inline-block;
+              margin-right: 10px;
+              background-color: #fff;
+              background-image: url("/assets/img/ico-call.png");
+              background-size: 22px auto;
+              background-repeat: no-repeat;
+              background-position: center center;
+              border-radius: 50%;
+              border: 1px solid #1b1464; }
+              @media (max-width: 1280px) {
+                .page-contact .contact-wrap .contact-detail .contact-interact .btn-call:before {
+                  margin-right: 5px; } }
+              @media (max-width: 992px) {
+                .page-contact .contact-wrap .contact-detail .contact-interact .btn-call:before {
+                  width: 30px;
+                  height: 30px;
+                  background-size: 15px auto; } }
+              @media (max-width: 768px) {
+                .page-contact .contact-wrap .contact-detail .contact-interact .btn-call:before {
+                  width: 80px;
+                  height: 80px;
+                  background-size: auto;
+                  margin-right: 10px; } }
+              @media (max-width: 480px) {
+                .page-contact .contact-wrap .contact-detail .contact-interact .btn-call:before {
+                  width: 50px;
+                  height: 50px;
+                  background-size: 25px auto; } }
+              @media (max-width: 410px) {
+                .page-contact .contact-wrap .contact-detail .contact-interact .btn-call:before {
+                  width: 40px;
+                  height: 40px;
+                  background-size: 20px auto; } }
+      @media (max-width: 768px) {
+        .page-contact .contact-wrap .contact-form {
+          margin-top: 50px;
+          padding-top: 50px; } }
+      @media (max-width: 480px) {
+        .page-contact .contact-wrap .contact-form {
+          margin-top: 40px;
+          padding-top: 40px; } }
+      @media (max-width: 410px) {
+        .page-contact .contact-wrap .contact-form {
+          margin-top: 25px;
+          padding-top: 25px; } }
+      .page-contact .contact-wrap .contact-form p {
+        margin-bottom: 25px; }
+        @media (max-width: 768px) {
+          .page-contact .contact-wrap .contact-form p {
+            margin-bottom: 45px; } }
+        @media (max-width: 480px) {
+          .page-contact .contact-wrap .contact-form p {
+            margin-bottom: 25px; } }
+      .page-contact .contact-wrap .contact-form form {
+        float: left;
+        width: 100%;
+        clear: both; }
+        .page-contact .contact-wrap .contact-form form .form-group {
+          float: left;
+          margin-right: 2.5%;
+          width: 96.5%;
+          margin-bottom: 10px; }
+          @media (max-width: 768px) {
+            .page-contact .contact-wrap .contact-form form .form-group {
+              width: 100%;
+              margin-right: 0; } }
+          @media (max-width: 480px) {
+            .page-contact .contact-wrap .contact-form form .form-group {
+              margin-bottom: 0; } }
+          .page-contact .contact-wrap .contact-form form .form-group.f-line {
+            width: 47%; }
+            @media (max-width: 768px) {
+              .page-contact .contact-wrap .contact-form form .form-group.f-line {
+                width: 100%; } }
+        .page-contact .contact-wrap .contact-form form input {
+          width: 100%;
+          background-color: #fff;
+          border: 0;
+          border-bottom: solid 1px #1b1464;
+          padding: 7px 10px;
+          outline: none;
+          font-size: 2rem; }
+          @media (max-width: 768px) {
+            .page-contact .contact-wrap .contact-form form input {
+              border-bottom: solid 3px #1b1464;
+              font-size: 4.9rem;
+              margin-bottom: 45px; } }
+          @media (max-width: 640px) {
+            .page-contact .contact-wrap .contact-form form input {
+              font-size: 3.7rem;
+              margin-bottom: 40px; } }
+          @media (max-width: 480px) {
+            .page-contact .contact-wrap .contact-form form input {
+              font-size: 2.8rem;
+              margin-bottom: 30px; } }
+          @media (max-width: 410px) {
+            .page-contact .contact-wrap .contact-form form input {
+              font-size: 2.2rem;
+              margin-bottom: 20px; } }
+          .page-contact .contact-wrap .contact-form form input::-webkit-input-placeholder {
+            color: #7d7d7d;
+            font-style: italic; }
+          .page-contact .contact-wrap .contact-form form input:-ms-input-placeholder {
+            color: #7d7d7d;
+            font-style: italic; }
+          .page-contact .contact-wrap .contact-form form input::-ms-input-placeholder {
+            color: #7d7d7d;
+            font-style: italic; }
+          .page-contact .contact-wrap .contact-form form input::placeholder {
+            color: #7d7d7d;
+            font-style: italic; }
+        .page-contact .contact-wrap .contact-form form textarea {
+          width: 100%;
+          background-color: #fff;
+          border: 0;
+          border-bottom: solid 1px #1b1464;
+          padding: 7px 10px;
+          outline: none;
+          font-size: 2rem; }
+          @media (max-width: 768px) {
+            .page-contact .contact-wrap .contact-form form textarea {
+              border-bottom: solid 3px #1b1464;
+              font-size: 4.9rem;
+              margin-bottom: 45px; } }
+          @media (max-width: 640px) {
+            .page-contact .contact-wrap .contact-form form textarea {
+              font-size: 3.7rem;
+              margin-bottom: 40px; } }
+          @media (max-width: 480px) {
+            .page-contact .contact-wrap .contact-form form textarea {
+              font-size: 2.8rem;
+              margin-bottom: 30px; } }
+          @media (max-width: 410px) {
+            .page-contact .contact-wrap .contact-form form textarea {
+              font-size: 2.2rem;
+              margin-bottom: 20px; } }
+          .page-contact .contact-wrap .contact-form form textarea::-webkit-input-placeholder {
+            color: #7d7d7d;
+            font-style: italic; }
+          .page-contact .contact-wrap .contact-form form textarea:-ms-input-placeholder {
+            color: #7d7d7d;
+            font-style: italic; }
+          .page-contact .contact-wrap .contact-form form textarea::-ms-input-placeholder {
+            color: #7d7d7d;
+            font-style: italic; }
+          .page-contact .contact-wrap .contact-form form textarea::placeholder {
+            color: #7d7d7d;
+            font-style: italic; }
+        .page-contact .contact-wrap .contact-form form button {
+          font-size: 2.4rem;
+          padding: 8px 45px;
+          border-radius: 25px;
+          color: #1b1464;
+          border: 1px solid #1b1464;
+          display: inline-block;
+          margin-top: 35px;
+          background-color: #fff; }
+          @media (max-width: 1280px) {
+            .page-contact .contact-wrap .contact-form form button {
+              font-size: 2.2rem; } }
+          @media (max-width: 768px) {
+            .page-contact .contact-wrap .contact-form form button {
+              font-size: 4.5rem;
+              border-radius: 100px;
+              padding: 15px 65px;
+              display: block;
+              margin-left: auto;
+              margin-right: auto;
+              background-color: #1b1464;
+              color: #fff; } }
+          @media (max-width: 480px) {
+            .page-contact .contact-wrap .contact-form form button {
+              font-size: 2.8rem;
+              margin-top: 15px; } }
+          @media (max-width: 410px) {
+            .page-contact .contact-wrap .contact-form form button {
+              font-size: 2.2rem;
+              padding: 12px 56px; } }
