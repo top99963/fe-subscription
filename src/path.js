@@ -1,10 +1,8 @@
 import config from './config'
 const { baseUrl } = config
 
-var Login = baseUrl + '/login'
-var Contact = baseUrl + '/contact_us'
-
 export default {
-    Login,
-    Contact
+    Login: baseUrl + '/login',
+    Contact: baseUrl + '/contact_us',
+    Subscribe: baseUrl + '/subscribe'
 }

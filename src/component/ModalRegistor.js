@@ -14,7 +14,7 @@ function ModalRegistor(props) {
                     </p>
                     <a className="btn" href="/#" onClick={props.handleClick}>
                         OK
-                        </a>
+                    </a>
                 </div>
             </div>
             <div className={"overlay " + (props.active && "show")} onClick={props.handleClick} />

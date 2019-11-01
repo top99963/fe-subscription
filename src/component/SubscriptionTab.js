@@ -1,10 +1,10 @@
 import React from 'react'
 import axios from 'axios'
-import config from '../config'
 import ModalRegistor from './ModalRegistor'
 import './SubscriptionTab.css'
 
-const { baseUrl } = config
+import path from '../path'
+
 const initState = {
     type: 'buyer',
     name: '',
@@ -24,7 +24,6 @@ class SubscriptionTab extends React.Component {
         this.handleChange = this.handleChange.bind(this)
         this.handleSubmit = this.handleSubmit.bind(this)
         this.handleDropDownChange = this.handleDropDownChange.bind(this)
-        this.fuck = this.fuck.bind(this)
     }
 
 
@@ -69,7 +68,7 @@ class SubscriptionTab extends React.Component {
             this.setState({ isValidEmail: false })
             return
         }
-        axios.post(baseUrl + '/subscripe', this.state)
+        axios.post(path.Subscribe, this.state)
             .then(res => {
                 if (res.data) {
                     console.log('success')
@@ -130,10 +129,6 @@ class SubscriptionTab extends React.Component {
         )
     }
 
-    fuck() {
-        this.setState({isModalOpen: false})
-    }
-
     render() {
         return (
             <div>
@@ -162,8 +157,8 @@ class SubscriptionTab extends React.Component {
                         </div>
                     </div>
                 </div>
-                <ModalRegistor 
-                    active={this.state.isModalOpen}  
+                <ModalRegistor
+                    active={this.state.isModalOpen}
                     handleClick={() => this.setState({ isModalOpen: false })}
                     title='Thank you for signing up'
                     detail='We appreciate you contacting us. We will get back to you soonest.'

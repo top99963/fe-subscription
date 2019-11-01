@@ -29,7 +29,7 @@ class Login extends React.Component {
         axios.post(path.Login, this.state)
             .then(res => {
                 if (res.data) {
-                    window.location.replace('http://www.expresso-origin.pttplc.com:8545')
+                    window.location.href = 'resting'
                 }
             })
             .catch(err => {
@@ -60,7 +60,7 @@ class Login extends React.Component {
                                         <input type='password' name='password' value={this.state.password} onChange={this.handleChange} placeholder="Password" />
                                     </div>
                                     <div className="btn">
-                                        <a href onClick={this.handleSubmit} style={{ cursor: "pointer" }} >Submit</a>
+                                        <a href='/#' onClick={this.handleSubmit} style={{ cursor: "pointer" }} >Submit</a>
                                     </div>
                                     <p style={{ color: 'red' }}>{this.state.errorMsg}</p>
                                 </div>
