@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react'
 import axios from 'axios'
 import path from '../path'
@@ -60,7 +61,7 @@ class Login extends React.Component {
                                         <input type='password' name='password' value={this.state.password} onChange={this.handleChange} placeholder="Password" />
                                     </div>
                                     <div className="btn">
-                                        <a href='/#' onClick={this.handleSubmit} style={{ cursor: "pointer" }} >Submit</a>
+                                        <a href="#" onClick={this.handleSubmit} style={{ cursor: "pointer" }} >Submit</a>
                                     </div>
                                     <p style={{ color: 'red' }}>{this.state.errorMsg}</p>
                                 </div>
