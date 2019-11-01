@@ -49,7 +49,7 @@ class ListContact extends React.Component {
             <Table striped bordered hover>
                 <thead>
                     <tr>
-                        <th style={{width:'300px'}}>Created</th>
+                        <th style={{width:'210px'}}>Created</th>
                         <th>Name</th>
                         <th>Email</th>
                         <th>Topic</th>

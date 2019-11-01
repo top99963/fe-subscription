@@ -50,7 +50,7 @@ class ListSubscribe extends React.Component {
             <Table striped bordered hover>
                 <thead>
                     <tr>
-                        <th style={{width:'300px'}}>Created</th>
+                        <th style={{width:'210px'}}>Created</th>
                         <th>Company</th>
                         <th>Name</th>
                         <th>Email</th>
